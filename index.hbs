@@ -1,0 +1,8 @@
+{{!< default}}
+{{#foreach posts}}
+    {{#if @first}}
+        {{> full-post}}
+    {{else}}
+        {{> list-post}}
+    {{/if}}
+{{/foreach}}

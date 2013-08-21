@@ -1,0 +1,56 @@
+<article id="post-4" class="post-4 post type-post status-publish format-standard hentry clearfix" role="article">
+
+    <header class="article-header">
+
+        <h1 class="h2">
+            <a href="/{{slug}}" rel="bookmark" title="{{title}}">Another post</a>
+        </h1>
+
+        <p class="byline vcard">
+            Posted
+            <time class="updated"
+                  datetime="{{dateFormat published_at format='YYYY-MM-DD'}}"
+                  pubdate="">
+                {{dateFormat published_at format='YYYY-MM-DD'}}
+            </time>
+
+            by
+            <span class="author">
+                <a href="http://localhost/wpbones/?author=1"
+                   title="Posts by admin"
+                   rel="author">
+                    admin
+                </a>
+            </span>
+            <span class="amp">&amp;</span>
+
+            filed under
+            <a href="http://localhost/wpbones/?cat=2"
+               title="View all posts in Cats"
+               rel="category">Cats</a>,
+            <a href="http://localhost/wpbones/?cat=1"
+               title="View all posts in Uncategorized"
+               rel="category">Uncategorized</a>
+            .
+        </p>
+
+        {{#if image}}
+            <figure class="featured-image">
+                <img src="/content/images/{{image}}" class="attachment-post-thumbnail" alt="">
+            </figure>
+        {{/if}}
+    </header> <!-- end article header -->
+
+    <section class="entry-content clearfix">
+        {{content}}
+    </section> <!-- end article section -->
+
+    <footer class="article-footer">
+        <p class="tags">
+            <span class="tags-title">
+                Tags: {{tags}}
+            </span>
+        </p>
+    </footer> <!-- end article footer -->
+
+</article>

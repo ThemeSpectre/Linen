@@ -1,0 +1,50 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Grid Stylesheet
+
+I've seperated the grid so you can swap it out easily. It's
+called at the top the style.scss stylesheet.
+
+There are a ton of grid solutions out there. You should definitely
+experiment with your own. Here are some recommendations:
+
+http://gridsetapp.com - Love this site. Responsive Grids made easy.
+http://susy.oddbird.net/ - Grids using Compass. Very elegant.
+http://gridpak.com/ - Create your own responsive grid.
+
+The grid below is a combination of the 1140 grid and Twitter Boostrap. 
+I liked 1140 but Boostrap's grid was way more detailed so I merged them 
+together, let's see how this works out. If you want to use 1140, the original 
+values are commented out on each line.
+
+******************************************************************/
+
+.onecol    { width: 5.801104972%;  }       /* 4.85%;  } /* grid_1  */
+.twocol    { width: 14.364640883%; }       /* 13.45%; } /* grid_2  */
+.threecol  { width: 22.928176794%; }       /* 22.05%; } /* grid_3  */
+.fourcol   { width: 31.491712705%; }       /* 30.75%; } /* grid_4  */
+.fivecol   { width: 40.055248616%; }       /* 39.45%; } /* grid_5  */
+.sixcol    { width: 48.618784527%; }       /* 48%;    } /* grid_6  */
+.sevencol  { width: 57.182320438000005%; } /* 56.75%; } /* grid_7  */
+.eightcol  { width: 65.74585634900001%; }  /* 65.4%;  } /* grid_8  */
+.ninecol   { width: 74.30939226%; }        /* 74.05%; } /* grid_9  */
+.tencol    { width: 82.87292817100001%; }  /* 82.7%;  } /* grid_10 */
+.elevencol { width: 91.436464082%; }       /* 91.35%; } /* grid_11 */
+.twelvecol { width: 99.999999993%; }       /* 100%;   } /* grid_12 */
+
+// layout & column defaults
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
+  position: relative;
+  float: left;
+  margin-left: 2.762430939%;
+}
+
+.first {
+  margin-left: 0;
+}
+
+.last {
+  float: right;
+}
