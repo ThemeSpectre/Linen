@@ -3,8 +3,10 @@
 <!--[if (IE 7)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9 lt-ie8"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!-->
+<html lang="en-US" class=" js flexbox webgl no-touch geolocation hashchange history websockets rgba hsla multiplebgs backgroundsize borderimage textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage applicationcache svg svgclippaths mediaqueries no-regions no-supports" style="">
+<!--<![endif]-->
 
-<html lang="en-US" class=" js flexbox webgl no-touch geolocation hashchange history websockets rgba hsla multiplebgs backgroundsize borderimage textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage applicationcache svg svgclippaths mediaqueries no-regions no-supports" style=""><!--<![endif]--><head>
+<head>
     <meta charset="utf-8">
 
     <!-- Google Chrome Frame for IE -->
@@ -42,100 +44,100 @@
 
 </head>
 
+
 <body class="home blog" style="">
 
-<div id="container">
+    <div id="container">
 
-    <header class="header" role="banner">
+        <header class="header" role="banner">
 
-        <div id="inner-header" class="wrap clearfix">
+            <div id="inner-header" class="wrap clearfix">
 
-            <!-- Logo and Blog Title -->
-            <p id="logo" class="h1">
-                {{#if settings.logo}}<a id="logo" href="/"><img src="{{settings.logo}}" alt="Logo"></a>{{/if}}
-                <a href="/" rel="nofollow">{{settings.title}}</a>
-            </p>
+                <!-- Logo and Blog Title -->
+                <p id="logo" class="h1">
+                    {{#if settings.logo}}<a id="logo" href="/"><img src="{{settings.logo}}" alt="Logo"></a>{{/if}}
+                    <a href="/" rel="nofollow">{{settings.title}}</a>
+                </p>
 
-            <!-- Site Description -->
-            {{settings.description}}
+                <!-- Site Description -->
+                {{settings.description}}
 
-            <nav role="navigation">
-                <div class="nav top-nav clearfix">
-                    {{nav}}
+                <nav role="navigation">
+                    <div class="nav top-nav clearfix">
+                        {{nav}}
+
+                    </div>
+                </nav>
+
+            </div> <!-- end #inner-header -->
+
+        </header> <!-- end header -->
+
+        <div id="content">
+
+            <div id="inner-content" class="wrap clearfix">
+
+                <div id="main" class="eightcol first clearfix" role="main">
+                    {{{body}}}
+
+                    <nav class="page-navigation">
+                        {{pagination}}
+                    </nav>
+
+                </div> <!-- end #main -->
+
+                <div id="sidebar1" class="sidebar fourcol last clearfix" role="complementary">
+
+                    <div id="search-2" class="widget widget_search">
+                        <form role="search" method="get" id="searchform" action="">
+                            <label class="screen-reader-text" for="s">Search for:</label>
+                            <input type="text" value="" name="s" id="s" placeholder="Search the Site...">
+                            <input type="submit" id="searchsubmit" value="Search">
+                        </form>
+                    </div>
+
+                    <div id="recent-posts-2" class="widget widget_recent_entries">
+                        <h4 class="widgettitle">Sample Widget</h4>
+                        <ul>
+                            <li>
+                                Hello world!
+                            </li>
+                        </ul>
+                    </div>
 
                 </div>
-            </nav>
+            </div> <!-- end #inner-content -->
 
-        </div> <!-- end #inner-header -->
+        </div> <!-- end #content -->
 
-    </header> <!-- end header -->
+        <footer class="footer" role="contentinfo">
 
-    <div id="content">
+            <div id="inner-footer" class="wrap clearfix">
 
-        <div id="inner-content" class="wrap clearfix">
+                <nav role="navigation">
+                </nav>
 
-            <div id="main" class="eightcol first clearfix" role="main">
+                <p class="source-org copyright">© 2013 Theme Spectre, LLC.</p>
 
+            </div> <!-- end #inner-footer -->
 
+        </footer> <!-- end footer -->
 
-                {{{body}}}
+    </div> <!-- end #container -->
 
+    <!-- JavaScript Libraries -->
+    <script type="text/javascript" src="js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery-migrate-1.2.1.js"></script>
 
+    <!-- Custom Scripts -->
+    <script type="text/javascript" src="/js/scripts.js"></script>
 
-            </div> <!-- end #main -->
-
-            <div id="sidebar1" class="sidebar fourcol last clearfix" role="complementary">
-
-
-                <div id="search-2" class="widget widget_search">
-                    <form role="search" method="get" id="searchform" action="">
-                        <label class="screen-reader-text" for="s">Search for:</label>
-                        <input type="text" value="" name="s" id="s" placeholder="Search the Site...">
-                        <input type="submit" id="searchsubmit" value="Search">
-                    </form>
-                </div>
-
-                <div id="recent-posts-2" class="widget widget_recent_entries">
-                    <h4 class="widgettitle">Sample Widget</h4>
-                    <ul>
-                        <li>
-                            Hello world!
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-        </div> <!-- end #inner-content -->
-
-    </div> <!-- end #content -->
-
-    <footer class="footer" role="contentinfo">
-
-        <div id="inner-footer" class="wrap clearfix">
-
-            <nav role="navigation">
-            </nav>
-
-            <p class="source-org copyright">© 2013 Theme Spectre, LLC.</p>
-
-        </div> <!-- end #inner-footer -->
-
-    </footer> <!-- end footer -->
-
-</div> <!-- end #container -->
-
-<!-- JavaScript Libraries -->
-<script type="text/javascript" src="js/libs/modernizr.custom.min.js"></script>
-<script type="text/javascript" src="js/libs/jquery-2.0.3.min.js"></script>
-<script type="text/javascript" src="js/libs/jquery-migrate-1.2.1.js"></script>
-
-<!-- Custom Scripts -->
-<script type="text/javascript" src="/js/scripts.js"></script>
-
-<!-- drop Google Analytics Here -->
-<!-- end analytics -->
+    <!-- drop Google Analytics Here -->
+    <!-- end analytics -->
 
 
 
 <!-- end page. what a ride! -->
-</body></html>
+</body>
+</html>

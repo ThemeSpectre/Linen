@@ -1311,29 +1311,29 @@ you can add resource intensive styles.
   /*********************
   NAVIGATION STYLES
   *********************/
-  .nav {
+  #site-navigation {
     background: #eee;
     border: 0;
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */ }
-    .nav li {
+    #site-navigation li {
       float: left;
       position: relative;
       /*
       plan your menus and drop-downs wisely.
       */
       /* showing sub-menus */ }
-      .nav li a {
+      #site-navigation li a {
         border-bottom: 0;
         /*
         you can use hover styles here even though this size
         has the possibility of being a mobile device.
         */ }
-        .nav li a:hover, .nav li a:focus {
+        #site-navigation li a:hover, #site-navigation li a:focus {
           background-color: #dedede; }
-      .nav li ul.sub-menu,
-      .nav li ul.children {
+      #site-navigation li ul.sub-menu,
+      #site-navigation li ul.children {
         margin-top: 0;
         border: 1px solid #ccc;
         border-top: 0;
@@ -1341,24 +1341,24 @@ you can add resource intensive styles.
         display: none;
         z-index: 8999;
         /* highlight sub-menu current page */ }
-        .nav li ul.sub-menu li,
-        .nav li ul.children li {
+        #site-navigation li ul.sub-menu li,
+        #site-navigation li ul.children li {
           /*
           if you need to go deeper, go nuts
           just remember deeper menus suck
           for usability. k, bai.
           */ }
-          .nav li ul.sub-menu li a,
-          .nav li ul.children li a {
+          #site-navigation li ul.sub-menu li a,
+          #site-navigation li ul.children li a {
             padding-left: 10px;
             border-right: 0;
             display: block;
             width: 180px;
             border-bottom: 1px solid #ccc; }
-          .nav li ul.sub-menu li:last-child a,
-          .nav li ul.children li:last-child a {
+          #site-navigation li ul.sub-menu li:last-child a,
+          #site-navigation li ul.children li:last-child a {
             border-bottom: 0; }
-      .nav li:hover ul {
+      #site-navigation li:hover ul {
         top: auto;
         display: block; }
 
