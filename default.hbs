@@ -18,22 +18,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) -->
-    <link rel="apple-touch-icon" href="http://localhost/wpbones/wp-content/themes/bones/library/images/apple-icon-touch.png">
-    <link rel="icon" href="http://localhost/wpbones/wp-content/themes/bones/favicon.png">
+    <link rel="apple-touch-icon" href="images/apple-icon-touch.png">
+    <link rel="icon" href="favicon.png">
 
     <!--[if IE]>
-    <link rel="shortcut icon" href="http://localhost/wpbones/wp-content/themes/bones/favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
     <![endif]-->
 
     <!-- or, set /favicon.ico for IE10 win -->
     <meta name="msapplication-TileColor" content="#f01d4f">
-    <meta name="msapplication-TileImage" content="http://localhost/wpbones/wp-content/themes/bones/library/images/win8-tile-icon.png">
+    <meta name="msapplication-TileImage" content="images/win8-tile-icon.png">
 
     <!-- TODO: Add Pingback URL (when it exists) -->
 
     <!-- wordpress head functions -->
     <meta name="robots" content="noindex,nofollow">
-    <link rel="alternate" type="application/rss+xml" title="WP Bones Test » Feed" href="http://localhost/wpbones/?feed=rss2">
+    <!-- <link rel="alternate" type="application/rss+xml" title="WP Bones Test » Feed" href="http://localhost/wpbones/?feed=rss2"> -->
     <link rel="stylesheet" id="bones-stylesheet-css" href="css/style.css" type="text/css" media="all">
 
     <!--[if lt IE 9]>
@@ -53,7 +53,7 @@
             <!-- Logo and Blog Title -->
             <p id="logo" class="h1">
                 {{#if settings.logo}}<a id="logo" href="/"><img src="{{settings.logo}}" alt="Logo"></a>{{/if}}
-                <a href="http://localhost/wpbones" rel="nofollow">{{settings.title}}</a>
+                <a href="/" rel="nofollow">{{settings.title}}</a>
             </p>
 
             <!-- Site Description -->
@@ -88,7 +88,7 @@
 
 
                 <div id="search-2" class="widget widget_search">
-                    <form role="search" method="get" id="searchform" action="http://localhost/wpbones/">
+                    <form role="search" method="get" id="searchform" action="">
                         <label class="screen-reader-text" for="s">Search for:</label>
                         <input type="text" value="" name="s" id="s" placeholder="Search the Site...">
                         <input type="submit" id="searchsubmit" value="Search">
