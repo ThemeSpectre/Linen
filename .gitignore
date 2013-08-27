@@ -1,2 +1,8 @@
 .DS_Store
 .DS_Store/*
+.sass-cache
+.sass-cache/*
+node_modules/*
+node_modules
+*.swp
+*.bak

@@ -158,17 +158,15 @@ HEADER STYLES
 NAVIGATION STYLES
 *********************/
 
-/*
-all navs have a .nav class applied via
-the wp_menu function; this is so we can
-easily write one group of styles for
-the navs on the site so our css is cleaner
-and more scalable.
-*/
+/* The {{nav}} helper outputs a site-navigation div */
 
-.nav {
+#site-navigation {
 	border: 1px solid #ccc;
 	border-bottom: 0;
+
+    ul {
+      margin : 0;
+    }
 
 	li {
 

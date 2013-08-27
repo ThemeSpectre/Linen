@@ -1,0 +1,9 @@
+{
+    "name": "linen",
+    "version": "0.0.1",
+    "devDependencies": {
+    "grunt": "~0.4.1",
+        "grunt-contrib-sass": "~0.5.0",
+        "grunt-contrib-uglify": "~0.2.2"
+    }
+}
