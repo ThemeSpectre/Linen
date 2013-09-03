@@ -1,4 +1,4 @@
-<article id="post-4" class="post-4 post type-post status-publish format-standard hentry clearfix {{post_class}}" role="article">
+<article class="hentry clearfix {{post_class}}" role="article">
 
     <header class="article-header">
 
@@ -22,16 +22,18 @@
                     {{author}}
                 </a>
             </span>
-            <span class="amp">&amp;</span>
 
-            filed under
-            <a href="http://localhost/wpbones/?cat=2"
-               title="View all posts in Cats"
-               rel="category">Cats</a>,
-            <a href="http://localhost/wpbones/?cat=1"
-               title="View all posts in Uncategorized"
-               rel="category">Uncategorized</a>
-            .
+            {{#if tags}}
+                <span class="amp">&amp;</span>
+                filed under
+                {{#each tags}}
+                    <a href="/tags/{{this.name}}"
+                       class="tag-label"
+                       title="View all posts in {{this.name}}"
+                       rel="category">{{this.name}}</a>
+                {{/each}}
+
+            {{/if}}
         </p>
 
         {{#if image}}
@@ -46,11 +48,35 @@
     </section> <!-- end article section -->
 
     <footer class="article-footer">
-        <p class="tags">
-            <span class="tags-title">
-                Tags: {{tags}}
-            </span>
-        </p>
+        {{#if tags}}
+            <p class="tags">
+                <span class="tags-title">
+                    Tags:
+                    {{#each tags}}
+                        <a href="/tags/{{this.name}}"
+                           class="tag-label"
+                           title="View all posts in {{this.name}}"
+                           rel="category">{{this.name}}</a>
+                    {{/each}}
+                </span>
+            </p>
+        {{/if}}
     </footer> <!-- end article footer -->
+
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'themespectre'; // required: replace example with your forum shortname
+        var disqus_url = 'http://blog.themespectre.com/testpost';
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 </article>

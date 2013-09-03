@@ -20,7 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) -->
-    <link rel="apple-touch-icon" href="images/apple-icon-touch.png">
+    <link rel="apple-touch-icon" href="/images/apple-icon-touch.png">
     <link rel="icon" href="favicon.png">
 
     <!--[if IE]>
@@ -29,23 +29,23 @@
 
     <!-- or, set /favicon.ico for IE10 win -->
     <meta name="msapplication-TileColor" content="#f01d4f">
-    <meta name="msapplication-TileImage" content="images/win8-tile-icon.png">
+    <meta name="msapplication-TileImage" content="/images/win8-tile-icon.png">
 
     <!-- TODO: Add Pingback URL (when it exists) -->
 
-    <!-- wordpress head functions -->
     <meta name="robots" content="noindex,nofollow">
     <!-- <link rel="alternate" type="application/rss+xml" title="WP Bones Test » Feed" href="http://localhost/wpbones/?feed=rss2"> -->
-    <link rel="stylesheet" id="bones-stylesheet-css" href="css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" id="linen-stylesheet-css" href="/css/style.css" type="text/css" media="all">
 
     <!--[if lt IE 9]>
-    <link rel='stylesheet' id='bones-ie-only-css'  href='css/ie.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='linen-ie-only-css'  href='/css/ie.css' type='text/css' media='all' />
     <![endif]-->
 
+    {{ghost_head}}
 </head>
 
 
-<body class="home blog" style="">
+<body class="home blog {{body_class}}" style="">
 
     <div id="container">
 
@@ -77,14 +77,11 @@
 
             <div id="inner-content" class="wrap clearfix">
 
-                <div id="main" class="eightcol first clearfix" role="main">
+                <main id="main" class="eightcol first clearfix" role="main">
                     {{{body}}}
 
-                    <nav class="page-navigation">
-                        {{pagination}}
-                    </nav>
+                </main> <!-- end #main -->
 
-                </div> <!-- end #main -->
 
                 <div id="sidebar1" class="sidebar fourcol last clearfix" role="complementary">
 
@@ -108,6 +105,11 @@
                 </div>
             </div> <!-- end #inner-content -->
 
+            {{!! After all the posts, we have the previous/next pagination links }}
+            {{#if pagination}}
+                {{pagination}}
+            {{/if}}
+
         </div> <!-- end #content -->
 
         <footer class="footer" role="contentinfo">
@@ -126,9 +128,9 @@
     </div> <!-- end #container -->
 
     <!-- JavaScript Libraries -->
-    <script type="text/javascript" src="js/libs/modernizr.custom.min.js"></script>
-    <script type="text/javascript" src="js/libs/jquery-2.0.3.min.js"></script>
-    <script type="text/javascript" src="js/libs/jquery-migrate-1.2.1.js"></script>
+    <script type="text/javascript" src="/js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="/js/libs/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="/js/libs/jquery-migrate-1.2.1.js"></script>
 
     <!-- Custom Scripts -->
     <script type="text/javascript" src="/js/scripts.js"></script>
