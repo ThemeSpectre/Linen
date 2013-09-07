@@ -375,115 +375,46 @@ POSTS & CONTENT STYLES
 		.size-thumbnail {}
 
 /******************************************************************
-PAGE NAVI STYLES
+PAGINATION
 ******************************************************************/
 
-.page-navigation,
-.prev-next {
-	margin: 1.1em 0 2.2em;
+/* The main wrapper for our pagination links */
+.pagination {
+  position: relative;
+  width: 80%;
+  margin: 4rem auto;
+  font-size: 1.3rem;
+  text-align: center;
+
+  a {}
 }
-	.bones_page_navi {
 
-		li {
-			float: left;
-			margin-left: 10px;
+/* Push the previous/next links out to the left/right */
+.older-posts,
+.newer-posts {
+  position: absolute;
+  display: inline-block;
+  padding: 0 15px;
+  text-decoration: none;
+  padding: 10px 10px;
 
-			a {
-				padding: 3px 6px;
-				display: block;
-				text-decoration: none;
-				position: relative;
+  &:hover {
+    background-color: #eee;
+  }
+}
 
-				&:hover,
-				&:focus {
-					color: #f01d4f;
-					text-decoration: underline;
-				}
-			}
+.older-posts {
+  right: 0;
+}
 
-		}
+.page-number {
+  display: inline-block;
+  padding: 2px 0;
+}
 
-		/* current page link */
-		li.bpn-current {
-			padding: 3px 6px;
-			border-bottom: 2px solid #f01d4f;
-			position: relative;
-
-			a {
-				/* hovering on current page link */
-				&:hover,
-				&:focus {}
-
-			}
-
-		} /* end .bones_page_navi .bpn-current */
-
-		/* common styles for page-navi links */
-		li.bpn-prev-link,
-		li.bpn-next-link {
-			font-weight: 700;
-
-			a {
-				padding: 0;
-			}
-		}
-
-		/* remove the bg on end links */
-		li.bpn-prev-link a:hover,
-		li.bpn-next-link a:hover,
-		li.bpn-first-page-link a:hover,
-		li.bpn-last-page-link a:hover {
-			background: none;
-		}
-
-		/* previous link */
-		li.bpn-prev-link {
-			a {
-				&:hover,
-				&:focus {}
-			}
-		}
-
-		/* next page link */
-		li.bpn-next-link {
-			a {
-				&:hover,
-				&:focus {}
-			}
-		}
-
-		/* first page link */
-		li.bpn-first-page-link {
-			a {
-				&:hover,
-				&:focus {}
-			}
-		}
-
-		/* last page link */
-		li.bpn-last-page-link {
-			a {
-				&:hover,
-				&:focus {}
-			}
-		}
-
-	} /* end .bones_page_navi */
-
-	/* fallback previous & next links */
-	.prev-next {
-
-		ul {}
-
-		.prev-link {
-			float: left;
-		}
-
-		.next-link {
-			float: right;
-		}
-
-	} /* end .prev-next */
+.newer-posts {
+  left: 0;
+}
 
 /*********************
 SIDEBARS & ASIDES

@@ -8,11 +8,11 @@
 
 <head>
     <meta charset="utf-8">
-
-    <!-- Google Chrome Frame for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     <title>{{settings.title}}</title>
+
+    <meta name="description" content="{{@blog.description}}">
 
     <!-- mobile meta (hooray!) -->
     <meta name="HandheldFriendly" content="True">
@@ -55,12 +55,12 @@
 
                 <!-- Logo and Blog Title -->
                 <p id="logo" class="h1">
-                    {{#if settings.logo}}<a id="logo" href="/"><img src="{{settings.logo}}" alt="Logo"></a>{{/if}}
-                    <a href="/" rel="nofollow">{{settings.title}}</a>
+                    {{#if @blog.logo}}<a id="logo" href="/"><img src="{{@blog.logo}}" alt="Logo"></a>{{/if}}
+                    <a href="/" rel="nofollow">{{@blog.title}}</a>
                 </p>
 
                 <!-- Site Description -->
-                {{settings.description}}
+                {{@blog.description}}
 
                 <nav role="navigation">
                     <div class="nav top-nav clearfix">
@@ -73,44 +73,7 @@
 
         </header> <!-- end header -->
 
-        <div id="content">
-
-            <div id="inner-content" class="wrap clearfix">
-
-                <main id="main" class="eightcol first clearfix" role="main">
-                    {{{body}}}
-
-                </main> <!-- end #main -->
-
-
-                <div id="sidebar1" class="sidebar fourcol last clearfix" role="complementary">
-
-                    <div id="search-2" class="widget widget_search">
-                        <form role="search" method="get" id="searchform" action="">
-                            <label class="screen-reader-text" for="s">Search for:</label>
-                            <input type="text" value="" name="s" id="s" placeholder="Search the Site...">
-                            <input type="submit" id="searchsubmit" value="Search">
-                        </form>
-                    </div>
-
-                    <div id="recent-posts-2" class="widget widget_recent_entries">
-                        <h4 class="widgettitle">Sample Widget</h4>
-                        <ul>
-                            <li>
-                                Hello world!
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div> <!-- end #inner-content -->
-
-            {{!! After all the posts, we have the previous/next pagination links }}
-            {{#if pagination}}
-                {{pagination}}
-            {{/if}}
-
-        </div> <!-- end #content -->
+        {{{body}}}
 
         <footer class="footer" role="contentinfo">
 
@@ -129,16 +92,16 @@
 
     <!-- JavaScript Libraries -->
     <script type="text/javascript" src="/js/libs/modernizr.custom.min.js"></script>
-    <script type="text/javascript" src="/js/libs/jquery-2.0.3.min.js"></script>
-    <script type="text/javascript" src="/js/libs/jquery-migrate-1.2.1.js"></script>
+
+    <!-- The Ghost footer helper will insert some shared javascript libraries and files required by plugins -->
+    {{ghost_foot}}
 
     <!-- Custom Scripts -->
     <script type="text/javascript" src="/js/scripts.js"></script>
 
     <!-- drop Google Analytics Here -->
+
     <!-- end analytics -->
-
-
 
 <!-- end page. what a ride! -->
 </body>
