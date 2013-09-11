@@ -1,27 +1,15 @@
 {{!< default}}
-<div id="content">
 
-    <div id="inner-content" class="wrap clearfix">
-
-        <main id="main" class="eightcol first clearfix" role="main">
-
-            {{#foreach posts}}
-                {{#if @first}}
-                    {{> full-post}}
-                {{else}}
-                    {{> list-post}}
-                {{/if}}
-            {{/foreach}}
-
-        </main> <!-- end #main -->
-
-        {{> sidebar}}
-
-    </div> <!-- end #inner-content -->
-
-    {{!! After all the posts, we have the previous/next pagination links }}
-    {{#if pagination}}
-        {{pagination}}
+{{#foreach posts}}
+    {{#if @first}}
+        {{> full-post}}
+    {{else}}
+        {{> list-post}}
     {{/if}}
+{{/foreach}}
 
-</div> <!-- end #content -->
+
+{{!! After all the posts, show the newer/older pagination links }}
+{{#if pagination}}
+    {{pagination}}
+{{/if}}

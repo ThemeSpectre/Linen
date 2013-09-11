@@ -91,6 +91,12 @@ body {
 /* ==========================================================================
    Links
    ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent; }
+
 /*
  * Addresses `outline` inconsistency between Chrome and other browsers.
  */
@@ -603,9 +609,9 @@ BUTTONS
 *********************/
 .button, .button:visited {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border: 1px solid #be0d37;
-  border-top-color: #db0f3f;
-  border-left-color: #db0f3f;
+  border: 1px solid #060606;
+  border-top-color: #151515;
+  border-left-color: #151515;
   padding: 4px 12px;
   color: white;
   display: inline-block;
@@ -617,30 +623,30 @@ BUTTONS
   margin-bottom: 20px;
   line-height: 21px;
   border-radius: 4px;
-  background-color: #e40f42;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f01d4f), to(#e40f42));
-  background-image: -webkit-linear-gradient(top, #f01d4f, #e40f42);
-  background-image: -moz-linear-gradient(top, #f01d4f, #e40f42);
-  background-image: -o-linear-gradient(top, #f01d4f, #e40f42);
-  background-image: linear-gradient(to bottom, #f01d4f, #e40f42); }
+  background-color: #1a1a1a;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#272727), to(#1a1a1a));
+  background-image: -webkit-linear-gradient(top, #272727, #1a1a1a);
+  background-image: -moz-linear-gradient(top, #272727, #1a1a1a);
+  background-image: -o-linear-gradient(top, #272727, #1a1a1a);
+  background-image: linear-gradient(to bottom, #272727, #1a1a1a); }
   .button:hover, .button:focus, .button:visited:hover, .button:visited:focus {
     color: white;
-    border: 1px solid #be0d37;
-    border-top-color: #9d0a2d;
-    border-left-color: #9d0a2d;
-    background-color: #cc0e3b;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#e40f42), to(#cc0e3b));
-    background-image: -webkit-linear-gradient(top, #e40f42, #cc0e3b);
-    background-image: -moz-linear-gradient(top, #e40f42, #cc0e3b);
-    background-image: -o-linear-gradient(top, #e40f42, #cc0e3b);
-    background-image: linear-gradient(to bottom, #e40f42, #cc0e3b); }
+    border: 1px solid #060606;
+    border-top-color: black;
+    border-left-color: black;
+    background-color: #0e0e0e;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#1a1a1a), to(#0e0e0e));
+    background-image: -webkit-linear-gradient(top, #1a1a1a, #0e0e0e);
+    background-image: -moz-linear-gradient(top, #1a1a1a, #0e0e0e);
+    background-image: -o-linear-gradient(top, #1a1a1a, #0e0e0e);
+    background-image: linear-gradient(to bottom, #1a1a1a, #0e0e0e); }
   .button:active, .button:visited:active {
-    background-color: #f01d4f;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#e40f42), to(#f01d4f));
-    background-image: -webkit-linear-gradient(top, #e40f42, #f01d4f);
-    background-image: -moz-linear-gradient(top, #e40f42, #f01d4f);
-    background-image: -o-linear-gradient(top, #e40f42, #f01d4f);
-    background-image: linear-gradient(to bottom, #e40f42, #f01d4f); }
+    background-color: #272727;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#1a1a1a), to(#272727));
+    background-image: -webkit-linear-gradient(top, #1a1a1a, #272727);
+    background-image: -moz-linear-gradient(top, #1a1a1a, #272727);
+    background-image: -o-linear-gradient(top, #1a1a1a, #272727);
+    background-image: linear-gradient(to bottom, #1a1a1a, #272727); }
 
 .blue-button, .blue-button:visited {
   border-color: #1472ad;
@@ -695,45 +701,6 @@ body {
   line-height: 1.5;
   color: #565656; }
 
-/********************
-WORDPRESS BODY CLASSES
-style a page via class
-********************/
-/* for sites that are read right to left (i.e. hebrew) */
-/* home page */
-/* blog template page */
-/* archive page */
-/* date archive page */
-/* replace the number to the corresponding page number */
-/* search page */
-/* search result page */
-/* no results search page */
-/* individual paged search (i.e. body.search-paged-3) */
-/* 404 page */
-/* single post page */
-/* individual post page by id (i.e. body.postid-73) */
-/* individual paged single (i.e. body.single-paged-3) */
-/* attatchment page */
-/* individual attatchment page (i.e. body.attachmentid-763) */
-/* style mime type pages */
-/* author page */
-/* user nicename (i.e. body.author-samueladams) */
-/* paged author archives (i.e. body.author-paged-4) for page 4 */
-/* category page */
-/* individual category page (i.e. body.category-6) */
-/* replace the number to the corresponding page number */
-/* tag page */
-/* individual tag page (i.e. body.tag-news) */
-/* replace the number to the corresponding page number */
-/* custom page template page */
-/* individual page template (i.e. body.page-template-contact-php */
-/* replace the number to the corresponding page number */
-/* parent page template */
-/* child page template */
-/* replace the number to the corresponding page number */
-/* if user is logged in */
-/* paged items like search results or archives */
-/* individual paged (i.e. body.paged-3) */
 /*********************
 LAYOUT & GRID STYLES
 *********************/
@@ -745,12 +712,12 @@ LAYOUT & GRID STYLES
 LINK STYLES
 *********************/
 a, a:visited {
-  color: #f01d4f;
+  color: #272727;
   /* on hover */
   /* on click */
   /* mobile tap color */ }
   a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #d10e3c; }
+    color: #474747; }
   a:link, a:visited:link {
     /*
     this highlights links on iPhones/iPads.
@@ -806,34 +773,21 @@ NAVIGATION STYLES
 #site-navigation {
   border: 1px solid #ccc;
   border-bottom: 0;
-  /* end .menu li */
-  /* highlight current page */
-  /* end current highlighters */ }
+  /* end .menu li */ }
   #site-navigation ul {
     margin: 0; }
-  #site-navigation li {
+  #site-navigation li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 10px;
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
     /*
-    so you really have to rethink your dropdowns for mobile.
-    you don't want to have it expand too much because the
-    screen is so small. How you manage your menu should
-    depend on the project. Here's some great info on it:
-    http://www.alistapart.com/articles/organizing-mobile/
+    remember this is for mobile ONLY, so there's no need
+    to even declare hover styles here, you can do it in
+    the style.scss file where it's relevant. We want to
+    keep this file as small as possible!
     */ }
-    #site-navigation li a {
-      display: block;
-      text-decoration: none;
-      padding: 10px 10px;
-      background-color: #eee;
-      border-bottom: 1px solid #ccc;
-      /*
-      remember this is for mobile ONLY, so there's no need
-      to even declare hover styles here, you can do it in
-      the style.scss file where it's relevant. We want to
-      keep this file as small as possible!
-      */ }
-    #site-navigation li ul.sub-menu li a,
-    #site-navigation li ul.children li a {
-      padding-left: 30px; }
 
 /* end .nav */
 /*********************
@@ -844,261 +798,79 @@ POSTS & CONTENT STYLES
 
 /* end .hentry */
 /* want to style individual post classes? Booya! */
-/* post by id (i.e. post-3) */
 /* general post style */
-/* general article on a page style */
-/* general style on an attatchment */
-/* sticky post style */
 /* hentry class */
-/* style by category (i.e. category-videos) */
 /* style by tag (i.e. tag-news) */
 /* post meta */
 .byline {
   color: #999; }
 
 /* entry content */
-.entry-content {
-  /*
-  image alignment on a screen this size may be
-  a bit difficult. It's set to start aligning
-  and floating images at the next breakpoint,
-  but it's up to you. Feel free to change it up.
-  */ }
-  .entry-content dd {
-    margin-left: 0;
-    font-size: 0.9em;
-    color: #787878;
-    margin-bottom: 1.5em; }
-  .entry-content img {
-    margin: 0 0 1.5em 0;
-    max-width: 100%;
-    height: auto; }
-  .entry-content video, .entry-content object {
-    max-width: 100%;
-    height: auto; }
-  .entry-content pre {
-    background: #eee;
-    border: 1px solid #cecece;
-    padding: 10px; }
+.entry-content dd {
+  margin-left: 0;
+  font-size: 0.9em;
+  color: #787878;
+  margin-bottom: 1.5em; }
+.entry-content img {
+  margin: 0 0 1.5em 0;
+  max-width: 100%;
+  height: auto; }
+.entry-content video, .entry-content object {
+  max-width: 100%;
+  height: auto; }
+.entry-content pre {
+  background: #eee;
+  border: 1px solid #cecece;
+  padding: 10px; }
 
 /* end .entry-content */
-.wp-caption {
+.img-caption {
   max-width: 100%;
   background: #eee;
   padding: 5px;
-  /* images inside wp-caption */ }
-  .wp-caption img {
+  /* images inside img-caption */ }
+  .img-caption img {
     max-width: 100%;
     margin-bottom: 0;
     width: 100%; }
-  .wp-caption p.wp-caption-text {
+  .img-caption p.img-caption-text {
     font-size: 0.85em;
     margin: 4px 0 7px;
     text-align: center; }
 
-/* end .wp-caption */
-/* image gallery styles */
-/* end .gallery */
-/* gallery caption styles */
+/* end .img-caption */
 /******************************************************************
-PAGE NAVI STYLES
+PAGINATION
 ******************************************************************/
-.page-navigation,
-.wp-prev-next {
-  margin: 1.1em 0 2.2em; }
+/* The main wrapper for our pagination links */
+.pagination {
+  position: relative;
+  width: 80%;
+  margin: 4rem auto;
+  font-size: 1.3rem;
+  text-align: center; }
 
-.bones_page_navi {
-  /* current page link */
-  /* end .bones_page_navi .bpn-current */
-  /* common styles for page-navi links */
-  /* remove the bg on end links */
-  /* previous link */
-  /* next page link */
-  /* first page link */
-  /* last page link */ }
-  .bones_page_navi li {
-    float: left;
-    margin-left: 10px; }
-    .bones_page_navi li a {
-      padding: 3px 6px;
-      display: block;
-      text-decoration: none;
-      position: relative; }
-      .bones_page_navi li a:hover, .bones_page_navi li a:focus {
-        color: #f01d4f;
-        text-decoration: underline; }
-  .bones_page_navi li.bpn-current {
-    padding: 3px 6px;
-    border-bottom: 2px solid #f01d4f;
-    position: relative; }
-    .bones_page_navi li.bpn-current a {
-      /* hovering on current page link */ }
-  .bones_page_navi li.bpn-prev-link,
-  .bones_page_navi li.bpn-next-link {
-    font-weight: 700; }
-    .bones_page_navi li.bpn-prev-link a,
-    .bones_page_navi li.bpn-next-link a {
-      padding: 0; }
-  .bones_page_navi li.bpn-prev-link a:hover,
-  .bones_page_navi li.bpn-next-link a:hover,
-  .bones_page_navi li.bpn-first-page-link a:hover,
-  .bones_page_navi li.bpn-last-page-link a:hover {
-    background: none; }
+/* Push the previous/next links out to the left/right */
+.older-posts,
+.newer-posts {
+  position: absolute;
+  display: inline-block;
+  padding: 0 15px;
+  text-decoration: none;
+  padding: 10px 10px; }
+  .older-posts:hover,
+  .newer-posts:hover {
+    background-color: #eee; }
 
-/* end .bones_page_navi */
-/* fallback previous & next links */
-.wp-prev-next .prev-link {
-  float: left; }
-.wp-prev-next .next-link {
-  float: right; }
+.older-posts {
+  right: 0; }
 
-/* end .wp-prev-next */
-/******************************************************************
-COMMENT STYLES
-******************************************************************/
-/* h3 comment title */
-#comments {
-  /* number of comments span */ }
+.page-number {
+  display: inline-block;
+  padding: 2px 0; }
 
-.commentlist {
-  /* general comment classes */
-  /* vcard */
-  /* end .commentlist .vcard */
-  /* comment meta */
-  /* comment content */
-  /* end .commentlist .comment_content */
-  /* comment reply link */
-  /* end .commentlist .comment-reply-link */ }
-  .commentlist li {
-    position: relative;
-    clear: both;
-    overflow: hidden;
-    list-style-type: none;
-    margin-bottom: 1.5em;
-    padding: 0.7335em 10px;
-    /* end .commentlist li ul.children */ }
-    .commentlist li:last-child {
-      margin-bottom: 0; }
-    .commentlist li ul.children {
-      margin: 0;
-      /* variations */
-      /* change number for different depth */ }
-  .commentlist li[class*=depth-] {
-    margin-top: 1.1em; }
-  .commentlist li.depth-1 {
-    margin-left: 0;
-    margin-top: 0; }
-  .commentlist li:not(.depth-1) {
-    margin-right: -10px;
-    margin-left: -10px;
-    margin-top: 0;
-    padding-bottom: 0; }
-  .commentlist .odd {
-    background: #eee; }
-  .commentlist .even {
-    background: #fefefe; }
-  .commentlist .vcard {
-    margin-left: 50px; }
-    .commentlist .vcard cite.fn {
-      font-weight: 700;
-      font-style: normal; }
-    .commentlist .vcard time {
-      float: right; }
-      .commentlist .vcard time a {
-        color: #999;
-        text-decoration: none; }
-        .commentlist .vcard time a:hover {
-          text-decoration: underline; }
-    .commentlist .vcard img.avatar {
-      position: absolute;
-      left: 10px;
-      padding: 2px;
-      border: 1px solid #cecece;
-      background: #fff; }
-  .commentlist .comment_content {
-    margin-left: 50px; }
-    .commentlist .comment_content p {
-      margin: 0.7335em 0 1.5em;
-      font-size: 1em;
-      line-height: 1.5em; }
-  .commentlist .comment-reply-link {
-    text-decoration: none;
-    float: right;
-    background: #4598bb;
-    padding: 3px 5px;
-    color: #fff;
-    opacity: 0.65;
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 0.9em; }
-    .commentlist .comment-reply-link:hover, .commentlist .comment-reply-link:focus {
-      opacity: 1; }
-
-/* end .commentlist */
-/******************************************************************
-COMMENT FORM STYLES
-******************************************************************/
-.respond-form {
-  margin: 1.5em 10px;
-  padding-bottom: 2.2em; }
-  .respond-form form {
-    margin: 0.75em 0; }
-    .respond-form form li {
-      list-style-type: none;
-      clear: both;
-      margin-bottom: 0.7335em; }
-      .respond-form form li label,
-      .respond-form form li small {
-        display: none; }
-    .respond-form form input[type=text],
-    .respond-form form input[type=email],
-    .respond-form form input[type=url],
-    .respond-form form textarea {
-      padding: 3px 6px;
-      background: #efefef;
-      border: 2px solid #cecece;
-      line-height: 1.5em;
-      /* form validation */ }
-      .respond-form form input[type=text]:focus,
-      .respond-form form input[type=email]:focus,
-      .respond-form form input[type=url]:focus,
-      .respond-form form textarea:focus {
-        background: #fff; }
-      .respond-form form input[type=text]:invalid,
-      .respond-form form input[type=email]:invalid,
-      .respond-form form input[type=url]:invalid,
-      .respond-form form textarea:invalid {
-        outline: none;
-        border-color: #fbc2c4;
-        background-color: #f6e7eb;
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        -ms-box-shadow: none;
-        box-shadow: none; }
-    .respond-form form input[type=text],
-    .respond-form form input[type=email],
-    .respond-form form input[type=url] {
-      max-width: 400px;
-      min-width: 250px; }
-    .respond-form form textarea {
-      resize: none;
-      width: 97.3%;
-      height: 150px; }
-
-/* comment submit button */
-/* comment form title */
-#comment-form-title {
-  margin: 0 0 1.1em; }
-
-/* cancel comment reply link */
-/* logged in comments */
-/* allowed tags */
-#allowed_tags {
-  margin: 1.5em 10px 0.7335em 0; }
-
-/* no comments */
-.nocomments {
-  margin: 0 20px 1.1em; }
+.newer-posts {
+  left: 0; }
 
 /*********************
 SIDEBARS & ASIDES

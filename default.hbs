@@ -3,7 +3,7 @@
 <!--[if (IE 7)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9 lt-ie8"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!-->
-<html lang="en-US" class=" js flexbox webgl no-touch geolocation hashchange history websockets rgba hsla multiplebgs backgroundsize borderimage textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage applicationcache svg svgclippaths mediaqueries no-regions no-supports" style="">
+<html lang="en-US" class="js flexbox webgl no-touch geolocation hashchange history websockets rgba hsla multiplebgs backgroundsize borderimage textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage applicationcache svg svgclippaths mediaqueries no-regions no-supports" style="">
 <!--<![endif]-->
 
 <head>
@@ -34,7 +34,7 @@
     <!-- TODO: Add Pingback URL (when it exists) -->
 
     <meta name="robots" content="noindex,nofollow">
-    <!-- <link rel="alternate" type="application/rss+xml" title="WP Bones Test » Feed" href="http://localhost/wpbones/?feed=rss2"> -->
+    <link rel="alternate" type="application/rss+xml" title="{{@blog.title}} » Feed" href="/rss">
     <link rel="stylesheet" id="linen-stylesheet-css" href="/css/style.css" type="text/css" media="all">
 
     <!--[if lt IE 9]>
@@ -49,43 +49,26 @@
 
     <div id="container">
 
-        <header class="header" role="banner">
+        {{> header}}
 
-            <div id="inner-header" class="wrap clearfix">
+        <div id="content">
 
-                <!-- Logo and Blog Title -->
-                <p id="logo" class="h1">
-                    {{#if @blog.logo}}<a id="logo" href="/"><img src="{{@blog.logo}}" alt="Logo"></a>{{/if}}
-                    <a href="/" rel="nofollow">{{@blog.title}}</a>
-                </p>
+            <div id="inner-content" class="wrap clearfix">
 
-                <!-- Site Description -->
-                {{@blog.description}}
+                <main id="main" class="eightcol first clearfix" role="main">
+                    {{{body}}}
+                </main> <!-- end #main -->
 
-                <nav role="navigation">
-                    <div class="nav top-nav clearfix">
-                        {{nav}}
+                {{> sidebar}}
 
-                    </div>
-                </nav>
+            </div> <!-- end #inner-content -->
 
-            </div> <!-- end #inner-header -->
-
-        </header> <!-- end header -->
-
-        {{{body}}}
+        </div> <!-- end #content -->
 
         <footer class="footer" role="contentinfo">
-
             <div id="inner-footer" class="wrap clearfix">
-
-                <nav role="navigation">
-                </nav>
-
                 <p class="source-org copyright">© 2013 Theme Spectre, LLC.</p>
-
             </div> <!-- end #inner-footer -->
-
         </footer> <!-- end footer -->
 
     </div> <!-- end #container -->

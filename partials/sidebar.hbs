@@ -1,12 +1,26 @@
-<div id="sidebar1" class="sidebar fourcol last clearfix" role="complementary">
+<div id="sidebar-main" class="sidebar fourcol clearfix" role="complementary">
 
-    <div id="sample-widget" class="widget">
-        <h4 class="widgettitle">Sample Widget</h4>
-        <ul>
-            <li>
-                Hello world!
-            </li>
-        </ul>
+    <div class="widget">
+
+        <!-- If a the page is rendering a single post, show the author info.
+             Otherwise show the blog description. -->
+        {{#if post}}
+            {{#post}}
+            <h4 class="widgettitle">{{author.name}}</h4>
+            <div id="author-info">
+                <p><img src="{{author.profile_picture}}" title="author pic"/></p>
+
+                <p>{{author.bio}}</p>
+
+                <p>{{author.location}}</p>
+            </div>
+            {{/post}}
+        {{else}}
+            <h4 class="widgettitle">{{@blog.title}}</h4>
+            <div id="blog-info">
+                {{@blog.description}}
+            </div>
+        {{/if}}
     </div>
 
 </div>

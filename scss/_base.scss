@@ -22,45 +22,6 @@ body {
 	color: #565656;
 }
 
-/********************
-WORDPRESS BODY CLASSES
-style a page via class
-********************/
-
-.rtl {}                           /* for sites that are read right to left (i.e. hebrew) */
-.home {}                          /* home page */
-.blog {}                          /* blog template page */
-.archive {}                       /* archive page */
-.date {}                          /* date archive page */
-	.date-paged-1 {}                /* replace the number to the corresponding page number */
-.search {}                        /* search page */
-	.search-results {}              /* search result page */
-	.search-no-results {}           /* no results search page */
-	.search-paged-1 {}              /* individual paged search (i.e. body.search-paged-3) */
-.error404 {}                      /* 404 page */
-.single {}                        /* single post page */
-	.postid-1 {}                    /* individual post page by id (i.e. body.postid-73) */
-	.single-paged-1 {}              /* individual paged single (i.e. body.single-paged-3) */
-.attachment {}                    /* attatchment page */
-	.attachmentid-1 {}              /* individual attatchment page (i.e. body.attachmentid-763) */
-	.attachment-mime-type {}        /* style mime type pages */
-.author {}                        /* author page */
-	.author-nicename {}             /* user nicename (i.e. body.author-samueladams) */
-	.author-paged-1 {}              /* paged author archives (i.e. body.author-paged-4) for page 4 */
-.category {}                      /* category page */
-	.category-1 {}                  /* individual category page (i.e. body.category-6) */
-	.category-paged-1 {}            /* replace the number to the corresponding page number */
-.tag {}                           /* tag page */
-	.tag-slug {}                    /* individual tag page (i.e. body.tag-news) */
-	.tag-paged-1 {}                 /* replace the number to the corresponding page number */
-.page-template {}                 /* custom page template page */
-	.page-parent {}                 /* parent page template */
-	.page-child {}                  /* child page template */
-	.parent-pageid-1 {}             /* replace the number to the corresponding page number */
-.logged-in {}                     /* if user is logged in */
-.paged {}                         /* paged items like search results or archives */
-	.paged-1 {}                     /* individual paged (i.e. body.paged-3) */
-
 /*********************
 LAYOUT & GRID STYLES
 *********************/
@@ -150,7 +111,7 @@ HEADER STYLES
 
 .header {}
 
-	#logo {}
+#logo {}
 
 /*********************
 NAVIGATION STYLES
@@ -190,46 +151,7 @@ NAVIGATION STYLES
 
 		&:last-child {}
 
-		/*
-		so you really have to rethink your dropdowns for mobile.
-		you don't want to have it expand too much because the
-		screen is so small. How you manage your menu should
-		depend on the project. Here's some great info on it:
-		http://www.alistapart.com/articles/organizing-mobile/
-		*/
-		ul.sub-menu,
-		ul.children {
-
-			li {
-
-				a {
-					padding-left: 30px;
-
-					&:hover,
-					&:focus {}
-
-					&:link {}
-
-				}
-
-				&:first-child {}
-
-				&:last-child {}
-
-			}
-
-		}
-
 	} /* end .menu li */
-
-	/* highlight current page */
-	li.current-menu-item,
-	li.current_page_item,
-	li.current-page-ancestor {
-
-		a {}
-
-	}  /* end current highlighters */
 
 } /* end .nav */
 
@@ -260,19 +182,13 @@ POSTS & CONTENT STYLES
 		.archive-title { }
 
 		/* want to style individual post classes? Booya! */
-		.post-id {}         /* post by id (i.e. post-3) */
 		.post {}            /* general post style */
-		.page {}            /* general article on a page style */
-		.attachment {}      /* general style on an attatchment */
-		.sticky {}          /* sticky post style */
 		.hentry {}          /* hentry class */
-		.category-slug {}   /* style by category (i.e. category-videos) */
 		.tag-slug {}        /* style by tag (i.e. tag-news) */
 
 		/* post meta */
 		.byline {
 			color: #999;
-
 			time {}
 		}
 
@@ -325,16 +241,6 @@ POSTS & CONTENT STYLES
 				height: auto;
 			}
 
-			/*
-			image alignment on a screen this size may be
-			a bit difficult. It's set to start aligning
-			and floating images at the next breakpoint,
-			but it's up to you. Feel free to change it up.
-			*/
-			.alignleft, img.alignleft {}
-			.alignright, img.alignright {}
-			.aligncenter, img.aligncenter {}
-
 			video, object {
 				max-width: 100%;
 				height: auto;
@@ -368,11 +274,6 @@ POSTS & CONTENT STYLES
 
 		} /* end .img-caption */
 
-
-		.size-full {}
-		.size-large {}
-		.size-medium {}
-		.size-thumbnail {}
 
 /******************************************************************
 PAGINATION
