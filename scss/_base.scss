@@ -172,18 +172,6 @@ POSTS & CONTENT STYLES
 
 		} /* end .hentry */
 
-		.single-title,
-		.page-title {}
-
-		.single-title {}
-
-		.page-title {}
-
-		.archive-title { }
-
-		/* want to style individual post classes? Booya! */
-		.post {}            /* general post style */
-		.hentry {}          /* hentry class */
 		.tag-slug {}        /* style by tag (i.e. tag-news) */
 
 		/* post meta */
@@ -295,9 +283,8 @@ PAGINATION
 .newer-posts {
   position: absolute;
   display: inline-block;
-  padding: 0 15px;
-  text-decoration: none;
   padding: 10px 10px;
+  text-decoration: none;
 
   &:hover {
     background-color: #eee;
@@ -354,25 +341,5 @@ FOOTER STYLES
 	clear: both;
 }
 
-	/*
-	if you checked out the link above:
-	http://www.alistapart.com/articles/organizing-mobile/
-	you'll want to style the footer nav
-	a bit more in-depth. Remember to keep
-	it simple because you'll have to
-	override these styles for the desktop
-	view.
-	*/
-	.footer-links {
-
-		ul {
-
-			li {}
-
-		}
-
-	} /* end .footer-links */
-
-
-	.copyright {}
+.copyright {}
 

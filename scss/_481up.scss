@@ -24,48 +24,20 @@ NAVIGATION STYLES
 #site-navigation {}
 
 	/* .menu is clearfixed inside mixins.scss */
-	.menu {
-		ul {
-			li {
-				a {
-					
-					/*
-					you can use hover styles here even though this size
-					has the possibility of being a mobile device.
-					*/
-					&:hover, &:focus {
-					
-					}
-				}
-				
-				&:first-child {}
-				&:last-child {}
-				
-				/*
-				plan your menus and drop-downs wisely.
-				*/
-				ul.sub-menu,
-				ul.children {
-					li {
-						a {
-							&:hover,
-							&:focus {}
-							&:link {}
-						}
-						&:first-child {}
-						&:last-child {}
-					}
-				}
-			} /* end .menu ul li */
-			
-			/* highlight current page */
-			li.current-menu-item, 
-			li.current_page_item,
-			li.current-page-ancestor {
-				a {}
-			}  /* end current highlighters */
-		} /* end .menu ul */
-	} /* end .menu */
+    ul {
+        li {
+            a {
+
+                /*
+                you can use hover styles here even though this size
+                has the possibility of being a mobile device.
+                */
+                &:hover, &:focus {
+
+                }
+            }
+        } /* end .menu ul li */
+    } /* end .menu ul */
 
 /*********************
 POSTS & CONTENT STYLES
@@ -73,8 +45,7 @@ POSTS & CONTENT STYLES
 
 /* entry content */
 .entry-content {
-			
-	
+
 	/* at this larger size, we can start to align images */
 	.alignleft, img.alignleft { 
 		margin-right: 1.5em; 
@@ -98,14 +69,8 @@ POSTS & CONTENT STYLES
 /*********************
 FOOTER STYLES
 *********************/
-	
-/*
-check your menus here. do they look good?
-do they need tweaking?
-*/
-.footer-links {
-	ul {
-		li {}
-	}
-} /* end .footer-links */
+
+.footer {
+
+} /* end .footer */
 			
