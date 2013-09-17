@@ -51,16 +51,8 @@ Need help w/ choosing your colors? Try this site out:
 http://0to255.com/
 *********************/
 
-$alert-yellow:      #ebe16f;
-$alert-red:         #fbe3e4;
-$alert-green:       #e6efc2;
-$alert-blue:        #d5edf8;
-
-$black:             #000;
-$white:             #fff;
-
-$bones-pink:        #f01d4f;
-$bones-blue:        #1990db;
+$black:             #212121;
+$white:             #efefef;
 
 $link-color:        #272727;
 $link-hover:        #474747;
@@ -114,37 +106,6 @@ span.amp {
 .text-center { text-align: center; }
 .text-right  { text-align: right; }
 
-
-// alerts and notices
-%alert {
-	margin: 10px;
-	padding: 5px 18px;
-	border: 1px solid;
-}
-
-.alert-help {
-	@extend %alert;
-	border-color: darken($alert-yellow, 5%);
-	background: $alert-yellow;
-}
-
-.alert-info {
-	@extend %alert;
-	border-color: darken($alert-blue, 5%);
-	background: $alert-blue;
-}
-
-.alert-error {
-	@extend %alert;
-	border-color: darken($alert-red, 5%);
-	background: $alert-red;
-}
-
-.alert-success {
-	@extend %alert;
-	border-color: darken($alert-green, 5%);
-	background: $alert-green;
-}
 
 /*********************
 TRANSITION
@@ -231,20 +192,5 @@ BUTTONS
 
 	&:active {
 		@include css-gradient(darken($link-color, 5%), $link-color);
-	}
-}
-
-.blue-button, .blue-button:visited {
-	border-color: darken($bones-blue, 10%);
-	text-shadow: 0 1px 1px darken($bones-blue, 10%);
-	@include css-gradient( $bones-blue, darken($bones-blue, 5%) );
-	box-shadow: inset 0 0 3px lighten($bones-blue, 16%);
-
-	&:hover, &:focus {
-		border-color: darken($bones-blue, 15%);
-		@include css-gradient( darken($bones-blue, 4%), darken($bones-blue, 10%) );
-	}
-	&:active {
-		@include css-gradient( darken($bones-blue, 5%), $bones-blue );
 	}
 }

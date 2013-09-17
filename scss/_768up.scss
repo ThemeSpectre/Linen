@@ -97,8 +97,8 @@ SIDEBARS & ASIDES
 				&:first-child {}
 				&:last-child {}
 				a {}
-
 				/* deep nesting */
+
 				ul {
 					margin-top: 0.75em;
 					padding-left: 1em;
@@ -111,7 +111,24 @@ SIDEBARS & ASIDES
 FOOTER STYLES
 *********************/
 
-.footer {
-
-} /* end .footer */
+/*
+you'll probably need to do quite a bit
+of overriding here if you styled them for
+mobile. Make sure to double check these!
+*/
+.footer-links {
+	ul {
+		li {
+			a {
+				&:hover {}
+			}
+			/*
+			be careful with the depth of your menus.
+			it's very rare to have multi-depth menus in
+			the footer.
+			*/
+			ul {}
+		}
+	}
+} /* end .footer-links */
 

@@ -109,9 +109,15 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 
-.header {}
+.header {
+    margin-top: 24px;
+}
 
-#logo {}
+#logo {
+    img {
+        max-width: 100%;
+    }
+}
 
 /*********************
 NAVIGATION STYLES
@@ -314,6 +320,10 @@ SIDEBARS & ASIDES
 
 	.widget {
 
+        img {
+            max-width: 100%;
+        }
+
 		ul {
 
 			li {
@@ -322,7 +332,10 @@ SIDEBARS & ASIDES
 
 				&:last-child {}
 
-				a {}
+				a {
+                    font-size: 1.2em;
+                    text-decoration: none;
+                }
 
 				/* deep nesting */
 				ul {}
@@ -341,5 +354,5 @@ FOOTER STYLES
 	clear: both;
 }
 
-.copyright {}
+	.copyright {}
 

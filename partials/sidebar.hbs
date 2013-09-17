@@ -1,19 +1,19 @@
-<div id="sidebar-main" class="sidebar fourcol clearfix" role="complementary">
+<aside id="sidebar-main" class="sidebar fourcol clearfix" role="complementary">
 
-    <div class="widget">
+    <section class="widget">
 
         <!-- If a the page is rendering a single post, show the author info.
              Otherwise show the blog description. -->
         {{#if post}}
             {{#post}}
-            <h4 class="widgettitle">{{author.name}}</h4>
-            <div id="author-info">
-                <p><img src="{{author.profile_picture}}" title="author pic"/></p>
+            <header class="h4 widgettitle">{{author.name}}</header>
+            <section id="author-info">
+                <p><img src="{{author.image}}" title="author pic"/></p>
 
                 <p>{{author.bio}}</p>
 
                 <p>{{author.location}}</p>
-            </div>
+            </section>
             {{/post}}
         {{else}}
             <h4 class="widgettitle">{{@blog.title}}</h4>
@@ -21,6 +21,17 @@
                 {{@blog.description}}
             </div>
         {{/if}}
-    </div>
+    </section>
 
-</div>
+
+    <section class="widget">
+        <header class="h4 widgettitle">Social Links</header>
+        <section id="author-info">
+            <ul>
+                <li><a href='#' class='symbol' title='&#xe086;'></a>Tweet Me!</li>
+                <li><a href='#' class='symbol' title='&#xe027;'></a>Find Me on Facebook</li>
+                <li><a href='#' class='symbol' title='&#xe039;'></a>What's Google Plus?</li>
+            </ul>
+        </section>
+    </section>
+</aside>

@@ -562,27 +562,6 @@ span.amp {
 .text-right {
   text-align: right; }
 
-.alert-help, .alert-info, .alert-error, .alert-success {
-  margin: 10px;
-  padding: 5px 18px;
-  border: 1px solid; }
-
-.alert-help {
-  border-color: #e8dc59;
-  background: #ebe16f; }
-
-.alert-info {
-  border-color: #bfe4f4;
-  background: #d5edf8; }
-
-.alert-error {
-  border-color: #f8cdce;
-  background: #fbe3e4; }
-
-.alert-success {
-  border-color: #deeaae;
-  background: #e6efc2; }
-
 /*********************
 TRANSITION
 *********************/
@@ -613,7 +592,7 @@ BUTTONS
   border-top-color: #151515;
   border-left-color: #151515;
   padding: 4px 12px;
-  color: white;
+  color: #efefef;
   display: inline-block;
   font-size: 11px;
   font-weight: bold;
@@ -630,7 +609,7 @@ BUTTONS
   background-image: -o-linear-gradient(top, #272727, #1a1a1a);
   background-image: linear-gradient(to bottom, #272727, #1a1a1a); }
   .button:hover, .button:focus, .button:visited:hover, .button:visited:focus {
-    color: white;
+    color: #efefef;
     border: 1px solid #060606;
     border-top-color: black;
     border-left-color: black;
@@ -648,31 +627,35 @@ BUTTONS
     background-image: -o-linear-gradient(top, #1a1a1a, #272727);
     background-image: linear-gradient(to bottom, #1a1a1a, #272727); }
 
-.blue-button, .blue-button:visited {
-  border-color: #1472ad;
-  text-shadow: 0 1px 1px #1472ad;
-  background-color: #1681c4;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1990db), to(#1681c4));
-  background-image: -webkit-linear-gradient(top, #1990db, #1681c4);
-  background-image: -moz-linear-gradient(top, #1990db, #1681c4);
-  background-image: -o-linear-gradient(top, #1990db, #1681c4);
-  background-image: linear-gradient(to bottom, #1990db, #1681c4);
-  box-shadow: inset 0 0 3px #59b3ec; }
-  .blue-button:hover, .blue-button:focus, .blue-button:visited:hover, .blue-button:visited:focus {
-    border-color: #116396;
-    background-color: #1472ad;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#1784c9), to(#1472ad));
-    background-image: -webkit-linear-gradient(top, #1784c9, #1472ad);
-    background-image: -moz-linear-gradient(top, #1784c9, #1472ad);
-    background-image: -o-linear-gradient(top, #1784c9, #1472ad);
-    background-image: linear-gradient(to bottom, #1784c9, #1472ad); }
-  .blue-button:active, .blue-button:visited:active {
-    background-color: #1990db;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#1681c4), to(#1990db));
-    background-image: -webkit-linear-gradient(top, #1681c4, #1990db);
-    background-image: -moz-linear-gradient(top, #1681c4, #1990db);
-    background-image: -o-linear-gradient(top, #1681c4, #1990db);
-    background-image: linear-gradient(to bottom, #1681c4, #1990db); }
+/*
+ * MONO SOCIAL ICONS FONT
+ * http://drinchev.github.io/monosocialiconsfont/
+*/
+@font-face {
+  font-family: 'Mono Social Icons Font';
+  src: url("../fonts/monosocial/MonoSocialIconsFont-1.10.eot");
+  src: url("../fonts/monosocial/MonoSocialIconsFont-1.10.eot?#iefix") format("embedded-opentype"), url("../fonts/monosocial/MonoSocialIconsFont-1.10.woff") format("woff"), url("../fonts/monosocial/MonoSocialIconsFont-1.10.ttf") format("truetype"), url("../fonts/monosocial/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont") format("svg");
+  src: url("../fonts/monosocial/MonoSocialIconsFont-1.10.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+.symbol, a.symbol:before {
+  font-family: 'Mono Social Icons Font';
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
+
+a.symbol:before {
+  content: attr(title);
+  margin-right: 0.3em;
+  font-size: 130%; }
 
 /*
 BASE (MOBILE) SIZE
@@ -766,6 +749,12 @@ h5, .h5 {
 /*********************
 HEADER STYLES
 *********************/
+.header {
+  margin-top: 24px; }
+
+#logo img {
+  max-width: 100%; }
+
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -797,9 +786,6 @@ POSTS & CONTENT STYLES
   margin-top: 2.2em; }
 
 /* end .hentry */
-/* want to style individual post classes? Booya! */
-/* general post style */
-/* hentry class */
 /* style by tag (i.e. tag-news) */
 /* post meta */
 .byline {
@@ -855,9 +841,8 @@ PAGINATION
 .newer-posts {
   position: absolute;
   display: inline-block;
-  padding: 0 15px;
-  text-decoration: none;
-  padding: 10px 10px; }
+  padding: 10px 10px;
+  text-decoration: none; }
   .older-posts:hover,
   .newer-posts:hover {
     background-color: #eee; }
@@ -875,8 +860,13 @@ PAGINATION
 /*********************
 SIDEBARS & ASIDES
 *********************/
+.widget img {
+  max-width: 100%; }
 .widget ul li {
   /* deep nesting */ }
+  .widget ul li a {
+    font-size: 1.2em;
+    text-decoration: none; }
 
 /*********************
 FOOTER STYLES
@@ -884,16 +874,6 @@ FOOTER STYLES
 .footer {
   clear: both; }
 
-/*
-if you checked out the link above:
-http://www.alistapart.com/articles/organizing-mobile/
-you'll want to style the footer nav
-a bit more in-depth. Remember to keep
-it simple because you'll have to
-override these styles for the desktop
-view.
-*/
-/* end .footer-links */
 /*
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
@@ -921,23 +901,15 @@ tweeners.
   NAVIGATION STYLES
   *********************/
   /* .menu is clearfixed inside mixins.scss */
-  .menu {
-    /* end .menu ul */ }
-    .menu ul {
-      /* end .menu ul li */
-      /* highlight current page */
-      /* end current highlighters */ }
-      .menu ul li {
-        /*
-        plan your menus and drop-downs wisely.
-        */ }
-        .menu ul li a {
-          /*
-          you can use hover styles here even though this size
-          has the possibility of being a mobile device.
-          */ }
+  ul {
+    /* end .menu ul li */ }
+    ul li a {
+      /*
+      you can use hover styles here even though this size
+      has the possibility of being a mobile device.
+      */ }
 
-  /* end .menu */
+  /* end .menu ul */
   /*********************
   POSTS & CONTENT STYLES
   *********************/
@@ -962,11 +934,7 @@ tweeners.
   /*********************
   FOOTER STYLES
   *********************/
-  /*
-  check your menus here. do they look good?
-  do they need tweaking?
-  */
-  /* end .footer-links */ }
+  /* end .footer */ }
 /*
 TABLET & SMALLER LAPTOPS
 This is the average viewing window. So Desktops, Laptops, and
@@ -1086,15 +1054,10 @@ you can add resource intensive styles.
   #site-navigation {
     background: #eee;
     border: 0;
-    /* end .menu ul li */
-    /* highlight current page */
-    /* end current highlighters */ }
+    /* end .menu ul li */ }
     #site-navigation li {
       float: left;
       position: relative;
-      /*
-      plan your menus and drop-downs wisely.
-      */
       /* showing sub-menus */ }
       #site-navigation li a {
         border-bottom: 0;
@@ -1104,32 +1067,6 @@ you can add resource intensive styles.
         */ }
         #site-navigation li a:hover, #site-navigation li a:focus {
           background-color: #dedede; }
-      #site-navigation li ul.sub-menu,
-      #site-navigation li ul.children {
-        margin-top: 0;
-        border: 1px solid #ccc;
-        border-top: 0;
-        position: absolute;
-        display: none;
-        z-index: 8999;
-        /* highlight sub-menu current page */ }
-        #site-navigation li ul.sub-menu li,
-        #site-navigation li ul.children li {
-          /*
-          if you need to go deeper, go nuts
-          just remember deeper menus suck
-          for usability. k, bai.
-          */ }
-          #site-navigation li ul.sub-menu li a,
-          #site-navigation li ul.children li a {
-            padding-left: 10px;
-            border-right: 0;
-            display: block;
-            width: 180px;
-            border-bottom: 1px solid #ccc; }
-          #site-navigation li ul.sub-menu li:last-child a,
-          #site-navigation li ul.children li:last-child a {
-            border-bottom: 0; }
       #site-navigation li:hover ul {
         top: auto;
         display: block; }
@@ -1155,17 +1092,6 @@ you can add resource intensive styles.
         margin-top: 0.75em;
         padding-left: 1em; }
 
-  /* links widget */
-  /* meta widget */
-  /* pages widget */
-  /* recent-posts widget */
-  /* archives widget */
-  /* tag-cloud widget */
-  /* calendar widget */
-  /* category widget */
-  /* recent-comments widget */
-  /* search widget */
-  /* text widget */
   /*********************
   FOOTER STYLES
   *********************/

@@ -1,8 +1,20 @@
-.DS_Store
-.DS_Store/*
+
+# Generated Stuff
 .sass-cache
 .sass-cache/*
+css/*.map
+
+
+# Node Modules (use `npm install` to generate these)
 node_modules/*
 node_modules
+
+
+# OS X Junk
+.DS_Store
+.DS_Store/*
+
+
+# Not-Needed System Files
 *.swp
 *.bak
