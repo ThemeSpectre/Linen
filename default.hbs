@@ -14,7 +14,7 @@
 
     <meta name="description" content="{{@blog.description}}">
 
-    <!-- mobile meta (hooray!) -->
+    <!-- mobile meta -->
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,16 +31,17 @@
     <meta name="msapplication-TileColor" content="#f01d4f">
     <meta name="msapplication-TileImage" content="/images/win8-tile-icon.png">
 
-    <!-- TODO: Add Pingback URL (when it exists) -->
-
-    <meta name="robots" content="noindex,nofollow">
+    <!-- Announce the rss feed -->
     <link rel="alternate" type="application/rss+xml" title="{{@blog.title}} » Feed" href="/rss">
+
+    <!-- Include the main stylesheet-->
     <link rel="stylesheet" id="linen-stylesheet-css" href="/css/style.css" type="text/css" media="all">
 
     <!--[if lt IE 9]>
     <link rel='stylesheet' id='linen-ie-only-css'  href='/css/ie.css' type='text/css' media='all' />
     <![endif]-->
 
+    {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 </head>
 
@@ -49,21 +50,27 @@
 
     <div id="container">
 
+        {{! Output the content of the header partial template }}
         {{> header}}
 
-        <div id="content">
+        <section id="content">
 
+            {{! The 'inner' divs provide a nice wrapper for content to help with fluidity and responsiveness }}
             <div id="inner-content" class="wrap clearfix">
 
+                {{! The main section uses eight columns in the grid framework }}
                 <main id="main" class="eightcol first clearfix" role="main">
                     {{{body}}}
                 </main> <!-- end #main -->
 
-                {{> sidebar}}
+                {{! The sidebar fills in the remaining four columns }}
+                <aside id="sidebar-main" class="sidebar fourcol clearfix" role="complementary">
+                    {{> sidebar}}
+                </aside>
 
             </div> <!-- end #inner-content -->
 
-        </div> <!-- end #content -->
+        </section> <!-- end #content -->
 
         <footer class="footer" role="contentinfo">
             <div id="inner-footer" class="wrap clearfix">
@@ -85,7 +92,5 @@
     <!-- drop Google Analytics Here -->
 
     <!-- end analytics -->
-
-<!-- end page. what a ride! -->
 </body>
 </html>

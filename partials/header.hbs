@@ -2,10 +2,12 @@
 
     <div id="inner-header" class="wrap clearfix">
 
-        <!-- Logo -->
-        <div id="logo" class="h1">
-            {{#if @blog.logo}}<a id="logo" href="/"><img src="{{@blog.logo}}" alt="Logo"></a>{{/if}}
-        </div>
+        {{#if @blog.logo}}
+            <!-- Logo -->
+            <div id="logo" class="h1">
+                <a id="logo" href="/"><img src="{{@blog.logo}}" alt="Logo"></a>
+            </div>
+        {{/if}}
 
         <!-- Title -->
         <div id="site-title" class="h1">
