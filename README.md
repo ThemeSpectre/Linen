@@ -10,6 +10,8 @@ Linen is created and maintained by *[Theme Spectre](http://themespectre.com/line
 
 ## Installation
 
+(More detailed installation instructions coming soon, I promise)
+
 ### Prerequisites
 
 1. Node.js
@@ -19,8 +21,6 @@ Linen is created and maintained by *[Theme Spectre](http://themespectre.com/line
 
 
 ### Setup
-
-(More detailed installation instructions coming soon)
 
 Clone (or fork) this repository into your /content/themes/ folder in Ghost.
 

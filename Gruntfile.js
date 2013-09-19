@@ -11,7 +11,8 @@ module.exports = function(grunt) {
         sass: {
             admin: {
                 options : {
-                    sourcemap: true
+                    // Only enable sourcemaps if you have Sass 3.3 installed.
+                    // sourcemap: true
                 },
                 files: {
                     '<%= paths.css %>/style.css': '<%= paths.scss %>/style.scss',
