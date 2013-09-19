@@ -29,10 +29,14 @@
                 <span class="amp">&amp;</span>
                 filed under
                 {{#each tags}}
-                    <a href="/tags/{{this.name}}"
-                       class="tag-label"
-                       title="View all posts in {{this.name}}"
-                       rel="category">{{this.name}}</a>
+                    <!-- Tag Links are not quite ready yet.
+                           <a href="/tags/{{this.name}}"
+                           class="tag-label"
+                           title="View all posts in {{this.name}}"
+                           rel="category">{{this.name}}</a>
+                           -->
+                    {{! Use the span below to display tags as plain text until tag links are ready }}
+                    <span class="tag-label">{{this.name}}</span>
                 {{/each}}
 
             {{/if}}
