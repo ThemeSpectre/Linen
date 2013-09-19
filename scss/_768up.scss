@@ -35,6 +35,10 @@ HEADER STYLES
 
 #logo {}
 
+#site-title {
+    font-size: 2.5em;
+}
+
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -81,54 +85,31 @@ SIDEBARS & ASIDES
 	margin-top: 2.2em;
 }
 
-	.widgettitle {
-		border-bottom: 2px solid #444;
-		margin-bottom: 0.75em;
-	}
+.widgettitle {
+    border-bottom: 2px solid #444;
+    margin-bottom: 0.75em;
+}
 
-	.widget {
-		padding: 0 10px;
-		margin: 2.2em 0;
+.widget {
+    padding: 0 10px;
+    margin: 2.2em 0;
 
-		ul {
-			li {
-				margin-bottom: 0.75em;
+    ul {
+        li {
+            margin-bottom: 0.75em;
 
-				&:first-child {}
-				&:last-child {}
-				a {}
-				/* deep nesting */
-
-				ul {
-					margin-top: 0.75em;
-					padding-left: 1em;
-				}
-			}
-		}
-	}
+            &:first-child {}
+            &:last-child {}
+            a {}
+        }
+    }
+} /* end .widget */
 
 /*********************
 FOOTER STYLES
 *********************/
 
-/*
-you'll probably need to do quite a bit
-of overriding here if you styled them for
-mobile. Make sure to double check these!
-*/
-.footer-links {
-	ul {
-		li {
-			a {
-				&:hover {}
-			}
-			/*
-			be careful with the depth of your menus.
-			it's very rare to have multi-depth menus in
-			the footer.
-			*/
-			ul {}
-		}
-	}
-} /* end .footer-links */
+.footer {
+
+} /* end .footer */
 

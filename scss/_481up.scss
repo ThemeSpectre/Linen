@@ -23,21 +23,21 @@ NAVIGATION STYLES
 
 #site-navigation {}
 
-	/* .menu is clearfixed inside mixins.scss */
-    ul {
-        li {
-            a {
+/* .menu is clearfixed inside mixins.scss */
+ul {
+    li {
+        a {
 
-                /*
-                you can use hover styles here even though this size
-                has the possibility of being a mobile device.
-                */
-                &:hover, &:focus {
+            /*
+            you can use hover styles here even though this size
+            has the possibility of being a mobile device.
+            */
+            &:hover, &:focus {
 
-                }
             }
-        } /* end .menu ul li */
-    } /* end .menu ul */
+        }
+    } /* end .menu ul li */
+} /* end .menu ul */
 
 /*********************
 POSTS & CONTENT STYLES

@@ -474,6 +474,39 @@ dd {
 .commentlist {
   list-style: none; }
 
+/*********************
+TYPOGRAPHY
+*********************/
+/*
+ * MONO SOCIAL ICONS FONT
+ * http://drinchev.github.io/monosocialiconsfont/
+*/
+@font-face {
+  font-family: 'Mono Social Icons Font';
+  src: url("../fonts/monosocial/MonoSocialIconsFont-1.10.eot");
+  src: url("../fonts/monosocial/MonoSocialIconsFont-1.10.eot?#iefix") format("embedded-opentype"), url("../fonts/monosocial/MonoSocialIconsFont-1.10.woff") format("woff"), url("../fonts/monosocial/MonoSocialIconsFont-1.10.ttf") format("truetype"), url("../fonts/monosocial/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont") format("svg");
+  src: url("../fonts/monosocial/MonoSocialIconsFont-1.10.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+.symbol, a.symbol:before {
+  font-family: 'Mono Social Icons Font';
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
+
+a.symbol:before {
+  content: attr(title);
+  margin-right: 0.3em;
+  font-size: 130%; }
+
 /******************************************************************
 Site Name:
 Author:
@@ -518,33 +551,8 @@ TOOLS
 COLORS
 Need help w/ choosing your colors? Try this site out:
 http://0to255.com/
+Also: http://sachagreif.com/sass-color-variables/
 *********************/
-/*
-Here's a great tutorial on how to
-use color variables properly:
-http://sachagreif.com/sass-color-variables/
-*/
-/*********************
-TYPOGRAPHY
-*********************/
-/* 	To embed your own fonts, use this syntax
-	and place your fonts inside the
-	library/fonts folder. For more information
-	on embedding fonts, go to:
-	http://www.fontsquirrel.com/
-	Be sure to remove the comment brackets.
-*/
-/*	@font-face {
-    	font-family: 'Font Name';
-    	src: url('library/fonts/font-name.eot');
-    	src: url('library/fonts/font-name.eot?#iefix') format('embedded-opentype'),
-             url('library/fonts/font-name.woff') format('woff'),
-             url('library/fonts/font-name.ttf') format('truetype'),
-             url('library/fonts/font-name.svg#font-name') format('svg');
-    	font-weight: normal;
-    	font-style: normal;
-	}
-*/
 /*
 use the best ampersand
 http://simplebits.com/notebook/2008/08/14/ampersands-2/
@@ -566,7 +574,7 @@ span.amp {
 TRANSITION
 *********************/
 /*
-I totally rewrote this to be cleaner and easier to use.
+@eddiemachado totally rewrote this to be cleaner and easier to use.
 You'll need to be using Sass 3.2+ for these to work.
 Thanks to @anthonyshort for the inspiration on these.
 USAGE: @include transition(all 0.2s ease-in-out);
@@ -628,44 +636,12 @@ BUTTONS
     background-image: linear-gradient(to bottom, #1a1a1a, #272727); }
 
 /*
- * MONO SOCIAL ICONS FONT
- * http://drinchev.github.io/monosocialiconsfont/
-*/
-@font-face {
-  font-family: 'Mono Social Icons Font';
-  src: url("../fonts/monosocial/MonoSocialIconsFont-1.10.eot");
-  src: url("../fonts/monosocial/MonoSocialIconsFont-1.10.eot?#iefix") format("embedded-opentype"), url("../fonts/monosocial/MonoSocialIconsFont-1.10.woff") format("woff"), url("../fonts/monosocial/MonoSocialIconsFont-1.10.ttf") format("truetype"), url("../fonts/monosocial/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont") format("svg");
-  src: url("../fonts/monosocial/MonoSocialIconsFont-1.10.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-.symbol, a.symbol:before {
-  font-family: 'Mono Social Icons Font';
-  -webkit-text-rendering: optimizeLegibility;
-  -moz-text-rendering: optimizeLegibility;
-  -ms-text-rendering: optimizeLegibility;
-  -o-text-rendering: optimizeLegibility;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -ms-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-  font-smoothing: antialiased; }
-
-a.symbol:before {
-  content: attr(title);
-  margin-right: 0.3em;
-  font-size: 130%; }
-
-/*
 BASE (MOBILE) SIZE
 This are the mobile styles. It's what people see on their phones. If
 you set a great foundation, you won't need to add too many styles in
 the other stylesheets. Remember, keep it light: Speed is Important.
 */
 /******************************************************************
-Site Name:
-Author:
 
 Stylesheet: Base Mobile Stylesheet
 
@@ -755,6 +731,9 @@ HEADER STYLES
 #logo img {
   max-width: 100%; }
 
+#site-title {
+  font-size: 1.8em; }
+
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -791,7 +770,7 @@ POSTS & CONTENT STYLES
 .byline {
   color: #999; }
 
-/* entry content */
+/* Article entry content */
 .entry-content dd {
   margin-left: 0;
   font-size: 0.9em;
@@ -826,7 +805,7 @@ POSTS & CONTENT STYLES
 
 /* end .img-caption */
 /******************************************************************
-PAGINATION
+PAGINATION (Thanks to the Ghost team for this)
 ******************************************************************/
 /* The main wrapper for our pagination links */
 .pagination {
@@ -862,12 +841,11 @@ SIDEBARS & ASIDES
 *********************/
 .widget img {
   max-width: 100%; }
-.widget ul li {
-  /* deep nesting */ }
-  .widget ul li a {
-    font-size: 1.2em;
-    text-decoration: none; }
+.widget ul li a {
+  font-size: 1.2em;
+  text-decoration: none; }
 
+/* end .widget */
 /*********************
 FOOTER STYLES
 *********************/
@@ -1048,6 +1026,9 @@ you can add resource intensive styles.
   /*********************
   HEADER STYLES
   *********************/
+  #site-title {
+    font-size: 2.5em; }
+
   /*********************
   NAVIGATION STYLES
   *********************/
@@ -1086,28 +1067,13 @@ you can add resource intensive styles.
     padding: 0 10px;
     margin: 2.2em 0; }
     .widget ul li {
-      margin-bottom: 0.75em;
-      /* deep nesting */ }
-      .widget ul li ul {
-        margin-top: 0.75em;
-        padding-left: 1em; }
+      margin-bottom: 0.75em; }
 
+  /* end .widget */
   /*********************
   FOOTER STYLES
   *********************/
-  /*
-  you'll probably need to do quite a bit
-  of overriding here if you styled them for
-  mobile. Make sure to double check these!
-  */
-  .footer-links ul li {
-    /*
-    be careful with the depth of your menus.
-    it's very rare to have multi-depth menus in
-    the footer.
-    */ }
-
-  /* end .footer-links */ }
+  /* end .footer */ }
 /*
 DESKTOP
 This is the average viewing window. So Desktops, Laptops, and
@@ -1148,8 +1114,6 @@ query for retina AND a certain size if you want. Go Nuts.
 */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /******************************************************************
-  Site Name: 
-  Author: 
   
   Stylesheet: Retina Screens & Devices Stylesheet
   

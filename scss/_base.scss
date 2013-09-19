@@ -1,6 +1,4 @@
 /******************************************************************
-Site Name:
-Author:
 
 Stylesheet: Base Mobile Stylesheet
 
@@ -119,6 +117,10 @@ HEADER STYLES
     }
 }
 
+#site-title {
+    font-size: 1.8em;
+}
+
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -170,107 +172,96 @@ POSTS & CONTENT STYLES
 	margin-top: 2.2em;
 }
 
-		.hentry {
+.hentry {
 
-			header {}
+    header {}
 
-			footer {}
+    footer {}
 
-		} /* end .hentry */
+} /* end .hentry */
 
-		.tag-slug {}        /* style by tag (i.e. tag-news) */
+.tag-slug {}        /* style by tag (i.e. tag-news) */
 
-		/* post meta */
-		.byline {
-			color: #999;
-			time {}
-		}
+/* post meta */
+.byline {
+    color: #999;
+    time {}
+}
 
-		/* entry content */
-		.entry-content {
+/* Article entry content */
+.entry-content {
 
-			p {}
+    p {}
 
+    ul, ol, table, dl {}
 
-			ul, ol, table, dl {}
+    ul, ol {
+        li {}
+    }
 
-			ul, ol {
+    ul {
+        li {}
+    }
 
-				li {}
+    ol {
+        li {}
+    }
 
-			}
+    blockquote {
+        &:before {}
+    }
 
-			ul {
+    dl {}
+    dt {}
+    dd {
+        margin-left: 0;
+        font-size: 0.9em;
+        color: #787878;
+        margin-bottom: 1.5em;
+    }
 
-				li {}
+    img {
+        margin: 0 0 1.5em 0;
+        max-width: 100%;
+        height: auto;
+    }
 
-			}
+    video, object {
+        max-width: 100%;
+        height: auto;
+    }
 
-			ol {
+    pre {
+        background: #eee;
+        border: 1px solid #cecece;
+        padding: 10px;
+    }
 
-				li {}
+} /* end .entry-content */
 
-			}
+.img-caption {
+    max-width: 100%;
+    background: #eee;
+    padding: 5px;
 
-			blockquote {
+    /* images inside img-caption */
+    img {
+        max-width: 100%;
+        margin-bottom: 0;
+        width: 100%;
+    }
 
-				&:before {}
+    p.img-caption-text {
+        font-size: 0.85em;
+        margin: 4px 0 7px;
+        text-align: center;
+    }
 
-			}
-
-			dl {}
-
-			dt {}
-
-			dd {
-				margin-left: 0;
-				font-size: 0.9em;
-				color: #787878;
-				margin-bottom: 1.5em;
-			}
-
-			img {
-				margin: 0 0 1.5em 0;
-				max-width: 100%;
-				height: auto;
-			}
-
-			video, object {
-				max-width: 100%;
-				height: auto;
-			}
-
-			pre {
-				background: #eee;
-				border: 1px solid #cecece;
-				padding: 10px;
-			}
-
-		} /* end .entry-content */
-
-		.img-caption {
-			max-width: 100%;
-			background: #eee;
-			padding: 5px;
-
-			/* images inside img-caption */
-			img {
-				max-width: 100%;
-				margin-bottom: 0;
-				width: 100%;
-			}
-
-			p.img-caption-text {
-				font-size: 0.85em;
-				margin: 4px 0 7px;
-				text-align: center;
-			}
-
-		} /* end .img-caption */
+} /* end .img-caption */
 
 
 /******************************************************************
-PAGINATION
+PAGINATION (Thanks to the Ghost team for this)
 ******************************************************************/
 
 /* The main wrapper for our pagination links */
@@ -316,35 +307,29 @@ SIDEBARS & ASIDES
 
 .sidebar {}
 
-	.widgettitle {}
+.widgettitle {}
 
-	.widget {
+.widget {
 
-        img {
-            max-width: 100%;
+    img {
+        max-width: 100%;
+    }
+
+    ul {
+
+        li {
+            &:first-child {}
+            &:last-child {}
+
+            a {
+                font-size: 1.2em;
+                text-decoration: none;
+            }
         }
 
-		ul {
+    }
 
-			li {
-
-				&:first-child {}
-
-				&:last-child {}
-
-				a {
-                    font-size: 1.2em;
-                    text-decoration: none;
-                }
-
-				/* deep nesting */
-				ul {}
-
-			}
-
-		}
-
-	}
+} /* end .widget */
 
 /*********************
 FOOTER STYLES
@@ -354,5 +339,5 @@ FOOTER STYLES
 	clear: both;
 }
 
-	.copyright {}
+.copyright {}
 

@@ -49,6 +49,7 @@ TOOLS
 COLORS
 Need help w/ choosing your colors? Try this site out:
 http://0to255.com/
+Also: http://sachagreif.com/sass-color-variables/
 *********************/
 
 $black:             #212121;
@@ -57,40 +58,6 @@ $white:             #efefef;
 $link-color:        #272727;
 $link-hover:        #474747;
 
-/*
-Here's a great tutorial on how to
-use color variables properly:
-http://sachagreif.com/sass-color-variables/
-*/
-
-
-/*********************
-TYPOGRAPHY
-*********************/
-
-$sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serif:             "Georgia", Cambria, Times New Roman, Times, serif;
-
-
-/* 	To embed your own fonts, use this syntax
-	and place your fonts inside the
-	library/fonts folder. For more information
-	on embedding fonts, go to:
-	http://www.fontsquirrel.com/
-	Be sure to remove the comment brackets.
-*/
-
-/*	@font-face {
-    	font-family: 'Font Name';
-    	src: url('library/fonts/font-name.eot');
-    	src: url('library/fonts/font-name.eot?#iefix') format('embedded-opentype'),
-             url('library/fonts/font-name.woff') format('woff'),
-             url('library/fonts/font-name.ttf') format('truetype'),
-             url('library/fonts/font-name.svg#font-name') format('svg');
-    	font-weight: normal;
-    	font-style: normal;
-	}
-*/
 
 /*
 use the best ampersand
@@ -112,7 +79,7 @@ TRANSITION
 *********************/
 
 /*
-I totally rewrote this to be cleaner and easier to use.
+@eddiemachado totally rewrote this to be cleaner and easier to use.
 You'll need to be using Sass 3.2+ for these to work.
 Thanks to @anthonyshort for the inspiration on these.
 USAGE: @include transition(all 0.2s ease-in-out);

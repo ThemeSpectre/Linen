@@ -1,3 +1,5 @@
+{{! This template displays a post in its entirety.
+    It is used to display the latest post in the index, and any single post }}
 <article class="hentry clearfix {{post_class}}" role="article">
 
     <header class="article-header">
@@ -36,6 +38,8 @@
             {{/if}}
         </p>
 
+        {{! Featured images are not yet implemented in Ghost.
+            But when they are, this will be awesome. }}
         {{#if image}}
             <figure class="featured-image">
                 <img src="/content/images/{{image}}" class="attachment-post-thumbnail" alt="">
@@ -53,10 +57,14 @@
                 <span class="tags-title">
                     Tags:
                     {{#each tags}}
-                        <a href="/tags/{{this.name}}"
+                        <!-- Tag Links are not quite ready yet.
+                           <a href="/tags/{{this.name}}"
                            class="tag-label"
                            title="View all posts in {{this.name}}"
                            rel="category">{{this.name}}</a>
+                           -->
+                        {{! Use the span below to display tags as plain text until tag links are ready }}
+                        <span class="tag-label">{{this.name}}</span>
                     {{/each}}
                 </span>
             </p>
