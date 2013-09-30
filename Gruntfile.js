@@ -18,7 +18,7 @@ module.exports = function(grunt) {
                 expand: true,
                 cwd: 'dist/',
                 src: ['**/*'],
-                dest: 'build/'
+                dest: ''
             }
         },
 
@@ -32,6 +32,11 @@ module.exports = function(grunt) {
                     {expand: true, src: ['partials/**'], dest: 'dist/'},
                     {expand: true, src: ['scss/**'], dest: 'dist/'},
                     {expand: true, src: ['*', '!.gitignore', '!.DS_Store'], dest: 'dist/'},
+                ]
+            },
+            archive: {
+                files: [
+                    {expand: true, src: ['linen.zip'], dest: 'build/'}
                 ]
             }
         },
@@ -64,5 +69,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('default', ['sass:admin']);
-    grunt.registerTask('bundle', ['clean', 'copy', 'compress']);
+    grunt.registerTask('bundle', ['clean', 'copy:main', 'compress', 'copy:archive']);
 };
