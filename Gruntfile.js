@@ -7,6 +7,43 @@ module.exports = function(grunt) {
         },
         buildType: 'Build',
         pkg: grunt.file.readJSON('package.json'),
+        archive_name: 'linen',
+
+        clean: {
+            pre: ['dist/', 'build/'],
+            post: ['<%= archive_name %>.zip']
+        },
+
+        compress: {
+            main: {
+                options: {
+                    archive: '<%= archive_name %>.zip'
+                },
+                expand: true,
+                cwd: 'dist/',
+                src: ['**/*'],
+                dest: ''
+            }
+        },
+
+        copy: {
+            main: {
+                files: [
+                    {expand: true, src: ['css/**'], dest: 'dist/'},
+                    {expand: true, src: ['fonts/**'], dest: 'dist/'},
+                    {expand: true, src: ['images/**'], dest: 'dist/'},
+                    {expand: true, src: ['js/**'], dest: 'dist/'},
+                    {expand: true, src: ['partials/**'], dest: 'dist/'},
+                    {expand: true, src: ['scss/**'], dest: 'dist/'},
+                    {expand: true, src: ['*', '!.gitignore', '!.DS_Store'], dest: 'dist/'},
+                ]
+            },
+            archive: {
+                files: [
+                    {expand: true, src: [global['name'] + '.zip'], dest: 'build/'}
+                ]
+            }
+        },
 
         sass: {
             admin: {
@@ -29,8 +66,12 @@ module.exports = function(grunt) {
         }
     });
 
+    grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-compress');
+    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('default', ['sass:admin']);
+    grunt.registerTask('bundle', ['clean:pre', 'copy:main', 'compress', 'copy:archive', 'clean:post']);
 };
