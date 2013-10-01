@@ -20,7 +20,7 @@ module.exports = function(grunt) {
                     archive: '<%= archive_name %>.zip'
                 },
                 expand: true,
-                cwd: 'dist/',
+                cwd: 'build/',
                 src: ['**/*'],
                 dest: ''
             }
@@ -29,18 +29,18 @@ module.exports = function(grunt) {
         copy: {
             main: {
                 files: [
-                    {expand: true, src: ['css/**'], dest: 'dist/'},
-                    {expand: true, src: ['fonts/**'], dest: 'dist/'},
-                    {expand: true, src: ['images/**'], dest: 'dist/'},
-                    {expand: true, src: ['js/**'], dest: 'dist/'},
-                    {expand: true, src: ['partials/**'], dest: 'dist/'},
-                    {expand: true, src: ['scss/**'], dest: 'dist/'},
-                    {expand: true, src: ['*', '!.gitignore', '!.DS_Store'], dest: 'dist/'},
+                    {expand: true, src: ['css/**'], dest: 'build/'},
+                    {expand: true, src: ['fonts/**'], dest: 'build/'},
+                    {expand: true, src: ['images/**'], dest: 'build/'},
+                    {expand: true, src: ['js/**'], dest: 'build/'},
+                    {expand: true, src: ['partials/**'], dest: 'build/'},
+                    {expand: true, src: ['scss/**'], dest: 'build/'},
+                    {expand: true, src: ['*', '!.gitignore', '!.DS_Store'], dest: 'build/'},
                 ]
             },
             archive: {
                 files: [
-                    {expand: true, src: [global['name'] + '.zip'], dest: 'build/'}
+                    {expand: true, src: ['<%= archive_name %>.zip'], dest: 'dist/'}
                 ]
             }
         },
