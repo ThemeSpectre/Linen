@@ -7,13 +7,17 @@ module.exports = function(grunt) {
         },
         buildType: 'Build',
         pkg: grunt.file.readJSON('package.json'),
+        archive_name: 'linen',
 
-        clean: ['dist/', 'build/'],
+        clean: {
+            pre: ['dist/', 'build/'],
+            post: ['<%= archive_name %>.zip']
+        },
 
         compress: {
             main: {
                 options: {
-                    archive: 'linen.zip'
+                    archive: '<%= archive_name %>.zip'
                 },
                 expand: true,
                 cwd: 'dist/',
@@ -36,7 +40,7 @@ module.exports = function(grunt) {
             },
             archive: {
                 files: [
-                    {expand: true, src: ['linen.zip'], dest: 'build/'}
+                    {expand: true, src: [global['name'] + '.zip'], dest: 'build/'}
                 ]
             }
         },
@@ -69,5 +73,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('default', ['sass:admin']);
-    grunt.registerTask('bundle', ['clean', 'copy:main', 'compress', 'copy:archive']);
+    grunt.registerTask('bundle', ['clean:pre', 'copy:main', 'compress', 'copy:archive', 'clean:post']);
 };
