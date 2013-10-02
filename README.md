@@ -33,7 +33,7 @@ Run `grunt` to build the Sass files, or `grunt watch` when you are ready to star
 
 To build a .zip file of your theme for distribution, run:
 
-`grunt bundle --name=yourhthemename`
+`grunt bundle --name=yourthemename`
 
 The *build* folder will contain the necessary theme files, and the *dist* folder will contain a .zip file of your theme that you can distribute and use in other Ghost instances.
 
