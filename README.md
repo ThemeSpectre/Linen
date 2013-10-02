@@ -28,6 +28,15 @@ Run `npm install` in the linen directory to install grunt modules.
 
 Run `grunt` to build the Sass files, or `grunt watch` when you are ready to start themeing.
 
+
+### Build
+
+To build a .zip file of your theme for distribution, run:
+
+`grunt bundle --name=yourhthemename`
+
+The *build* folder will contain the necessary theme files, and the *dist* folder will contain a .zip file of your theme that you can distribute and use in other Ghost instances.
+
 ## Thanks To:
 
 * Themble & Eddie Machado for the Bones framework
