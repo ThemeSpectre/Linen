@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         },
         buildType: 'Build',
         pkg: grunt.file.readJSON('package.json'),
-        archive_name: 'linen',
+        archive_name: grunt.option('name') || 'linen',
 
         clean: {
             pre: ['dist/', 'build/'],
