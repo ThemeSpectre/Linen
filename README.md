@@ -37,6 +37,20 @@ To build a .zip file of your theme for distribution, run:
 
 The *build* folder will contain the necessary theme files, and the *dist* folder will contain a .zip file of your theme that you can distribute and use in other Ghost instances.
 
+### Notes
+
+If you get an error about sass:
+
+    user@host:~/ghost/content/themes/Linen$ grunt
+    Running "sass:admin" (sass) task
+    invalid option: --load-path
+    invalid option: --load-path
+    Warning:  Use --force to continue.
+    
+    Aborted due to warnings.
+  
+try `gem install sass`
+
 ## Thanks To:
 
 * Themble & Eddie Machado for the Bones framework
