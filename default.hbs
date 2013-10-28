@@ -19,20 +19,11 @@
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) -->
-    <link rel="apple-touch-icon" href="/images/apple-icon-touch.png">
-    <link rel="icon" href="favicon.png">
-
-    <!--[if IE]>
-    <link rel="shortcut icon" href="favicon.ico">
-    <![endif]-->
-
-    <!-- or, set /favicon.ico for IE10 win -->
-    <meta name="msapplication-TileColor" content="#f01d4f">
-    <meta name="msapplication-TileImage" content="/images/win8-tile-icon.png">
-
     <!-- Announce the rss feed -->
     <link rel="alternate" type="application/rss+xml" title="{{@blog.title}} » Feed" href="/rss">
+
+    <!-- Add Modernizr for better IE8 Support -->
+    <script type="text/javascript" src="/js/libs/modernizr.custom.min.js"></script>
 
     <!-- Include the main stylesheet-->
     <link rel="stylesheet" id="linen-stylesheet-css" href="/css/style.css" type="text/css" media="all">
@@ -43,6 +34,9 @@
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
+
+    <!-- Include custom CSS -->
+    <link rel="stylesheet" id="custom-stylesheet-css" href="/css/custom.css" type="text/css" media="all">
 </head>
 
 
@@ -80,17 +74,11 @@
 
     </div> <!-- end #container -->
 
-    <!-- JavaScript Libraries -->
-    <script type="text/javascript" src="/js/libs/modernizr.custom.min.js"></script>
-
     <!-- The Ghost footer helper will insert some shared javascript libraries and files required by plugins -->
     {{ghost_foot}}
 
     <!-- Custom Scripts -->
     <script type="text/javascript" src="/js/scripts.js"></script>
 
-    <!-- drop Google Analytics Here -->
-
-    <!-- end analytics -->
 </body>
 </html>
