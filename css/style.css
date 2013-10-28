@@ -804,6 +804,13 @@ POSTS & CONTENT STYLES
     text-align: center; }
 
 /* end .img-caption */
+/* Add a comma after tags, unless it is the last one */
+.tag-label:after {
+  content: ","; }
+
+.tag-label:last-child:after {
+  content: ""; }
+
 /******************************************************************
 PAGINATION (Thanks to the Ghost team for this)
 ******************************************************************/
@@ -1223,5 +1230,3 @@ be set to display none.
   .respond-form,
   nav {
     display: none; } }
-
-/*# sourceMappingURL=style.css.map */
