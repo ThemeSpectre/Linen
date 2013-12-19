@@ -20,23 +20,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Announce the rss feed -->
-    <link rel="alternate" type="application/rss+xml" title="{{@blog.title}} » Feed" href="/rss">
+    <link rel="alternate" type="application/rss+xml" title="{{@blog.title}} » Feed" href="{{@blog.url}}/rss">
 
     <!-- Add Modernizr for better IE8 Support -->
-    <script type="text/javascript" src="/js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="{{@blog.url}}/assets/js/libs/modernizr.custom.min.js"></script>
 
     <!-- Include the main stylesheet-->
-    <link rel="stylesheet" id="linen-stylesheet-css" href="/css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" id="linen-stylesheet-css" href="{{@blog.url}}/assets/css/style.css" type="text/css" media="all">
 
     <!--[if lt IE 9]>
-    <link rel='stylesheet' id='linen-ie-only-css'  href='/css/ie.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='linen-ie-only-css'  href='{{@blog.url}}/assets/css/ie.css' type='text/css' media='all' />
     <![endif]-->
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 
     <!-- Include custom CSS -->
-    <link rel="stylesheet" id="custom-stylesheet-css" href="/css/custom.css" type="text/css" media="all">
+    <link rel="stylesheet" id="custom-stylesheet-css" href="{{@blog.url}}/assets/css/custom.css" type="text/css" media="all">
 </head>
 
 
@@ -68,7 +68,7 @@
 
         <footer class="footer" role="contentinfo">
             <div id="inner-footer" class="wrap clearfix">
-                <p class="source-org copyright">© 2013 Theme Spectre, LLC.</p>
+                <p class="source-org copyright">© 2013 <a href="http://themespectre.com">Theme Spectre, LLC.</a></p>
             </div> <!-- end #inner-footer -->
         </footer> <!-- end footer -->
 
@@ -78,7 +78,7 @@
     {{ghost_foot}}
 
     <!-- Custom Scripts -->
-    <script type="text/javascript" src="/js/scripts.js"></script>
+    <script type="text/javascript" src="{{@blog.url}}/assets/js/scripts.js"></script>
 
 </body>
 </html>

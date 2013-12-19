@@ -999,6 +999,7 @@ you can add resource intensive styles.
   /* 100%;   } /* grid_12 */
   .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
     position: relative;
+    display: block;
     float: left;
     margin-left: 2.762430939%; }
 
