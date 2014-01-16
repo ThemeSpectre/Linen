@@ -37,6 +37,7 @@ values are commented out on each line.
 // layout & column defaults
 .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
   position: relative;
+  display: block;
   float: left;
   margin-left: 2.762430939%;
 }
