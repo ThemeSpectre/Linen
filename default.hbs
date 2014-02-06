@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>{{settings.title}}</title>
+    <title>{{@blog.title}}</title>
 
     <meta name="description" content="{{@blog.description}}">
 
@@ -23,20 +23,20 @@
     <link rel="alternate" type="application/rss+xml" title="{{@blog.title}} » Feed" href="{{@blog.url}}/rss">
 
     <!-- Add Modernizr for better IE8 Support -->
-    <script type="text/javascript" src="{{@blog.url}}/assets/js/libs/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="{{asset '/js/libs/modernizr.custom.min.js'}}"></script>
 
     <!-- Include the main stylesheet-->
-    <link rel="stylesheet" id="linen-stylesheet-css" href="{{@blog.url}}/assets/css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" id="linen-stylesheet-css" href="{{asset 'css/style.css'}}" type="text/css" media="all" />
 
     <!--[if lt IE 9]>
-    <link rel='stylesheet' id='linen-ie-only-css'  href='{{@blog.url}}/assets/css/ie.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='linen-ie-only-css'  href="{{asset 'css/ie.css'}}" type='text/css' media='all' />
     <![endif]-->
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 
     <!-- Include custom CSS -->
-    <link rel="stylesheet" id="custom-stylesheet-css" href="{{@blog.url}}/assets/css/custom.css" type="text/css" media="all">
+    <link rel="stylesheet" id="custom-stylesheet-css" href="{{asset 'css/custom.css'}}" type="text/css" media="all">
 </head>
 
 
@@ -78,7 +78,7 @@
     {{ghost_foot}}
 
     <!-- Custom Scripts -->
-    <script type="text/javascript" src="{{@blog.url}}/assets/js/scripts.js"></script>
+    <script type="text/javascript" src="{{asset '/js/scripts.js'}}"></script>
 
 </body>
 </html>
