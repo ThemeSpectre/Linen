@@ -5,7 +5,7 @@
     <header class="article-header">
 
         <h1 class="h2">
-            <a href="{{@blog.url}}/{{slug}}" rel="bookmark" title="{{title}}">{{title}}</a>
+            <a href="{{url}}" rel="bookmark" title="{{title}}">{{title}}</a>
         </h1>
 
         <p class="byline vcard">
@@ -25,26 +25,12 @@
                 <span class="amp">&amp;</span>
                 filed under
                 {{#each tags}}
-                    <!-- Tag Links are not quite ready yet.
-                           <a href="/tags/{{this.name}}"
-                           class="tag-label"
-                           title="View all posts in {{this.name}}"
-                           rel="category">{{this.name}}</a>
-                           -->
-                    {{! Use the span below to display tags as plain text until tag links are ready }}
                     <span class="tag-label">{{this.name}}</span>
                 {{/each}}
 
             {{/if}}
         </p>
 
-        {{! Featured images are not yet implemented in Ghost.
-            But when they are, this will be awesome. }}
-        {{#if image}}
-            <figure class="featured-image">
-                <img src="/content/images/{{image}}" class="attachment-post-thumbnail" alt="">
-            </figure>
-        {{/if}}
     </header> <!-- end article header -->
 
     <section class="entry-content clearfix">
@@ -57,12 +43,6 @@
                 <span class="tags-title">
                     Tags:
                     {{#each tags}}
-                        <!-- Tag Links are not quite ready yet.
-                           <a href="/tags/{{this.name}}"
-                           class="tag-label"
-                           title="View all posts in {{this.name}}"
-                           rel="category">{{this.name}}</a>
-                           -->
                         {{! Use the span below to display tags as plain text until tag links are ready }}
                         <span class="tag-label">{{this.name}}</span>
                     {{/each}}
