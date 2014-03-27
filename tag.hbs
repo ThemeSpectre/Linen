@@ -1,0 +1,13 @@
+{{!< default}}
+
+
+
+{{#foreach posts}}
+    {{> list-post}}
+{{/foreach}}
+
+
+{{!! After all the posts, show the newer/older pagination links }}
+{{#if pagination}}
+    {{pagination}}
+{{/if}}

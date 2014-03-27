@@ -9,6 +9,11 @@
         {{date published_at format="MMMM DD, YYYY"}}
     </time>
 
+    {{#if tags}}
+        <span class="amp">&amp;</span>
+        filed under <span class="tags-title">{{tags}}</span>
+    {{/if}}
+
     <section class="entry-content clearfix">
         {{excerpt}}... <a href="{{url}}">Read More</a>
     </section>
