@@ -15,9 +15,8 @@ Linen is created and maintained by *[Theme Spectre](http://themespectre.com/line
 ### Prerequisites
 
 1. Node.js
-2. Ruby
-3. Sass
-4. Grunt
+2. Sass (libsass)
+3. Grunt
 
 
 ### Setup
