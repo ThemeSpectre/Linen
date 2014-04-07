@@ -16,25 +16,13 @@ of the styles inside media queries.
 /*
  * Corrects `block` display not defined in IE6/7/8/9 & FF3.
  */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section,
-summary {
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
 
 /*
  * Corrects `inline-block` display not defined in IE6/7/8/9 & FF3.
  */
-audio,
-canvas,
-video {
+audio, canvas, video {
   display: inline-block;
   *display: inline;
   *zoom: 1; }
@@ -75,11 +63,7 @@ html {
  * Addresses `font-family` inconsistency between `textarea` and other form
  * elements.
  */
-html,
-button,
-input,
-select,
-textarea {
+html, button, input, select, textarea {
   font-family: sans-serif; }
 
 /*
@@ -107,8 +91,7 @@ a:focus {
  * Improves readability when focused and also mouse hovered in all browsers.
  * people.opera.com/patrickl/experiments/keyboard/test
  */
-a:active,
-a:hover {
+a:active, a:hover {
   outline: 0; }
 
 /* ==========================================================================
@@ -151,8 +134,7 @@ abbr[title] {
 /*
  * Addresses style set to `bolder` in FF3+, S4/5, Chrome.
  */
-b,
-strong {
+b, strong {
   font-weight: bold; }
 
 blockquote {
@@ -174,18 +156,14 @@ mark {
 /*
  * Addresses margins set differently in IE6/7.
  */
-p,
-pre {
+p, pre {
   margin: 1em 0; }
 
 /*
  * Corrects font family set oddly in IE6, S4/5, Chrome.
  * en.wikipedia.org/wiki/User:Davidgothberg/Test59
  */
-code,
-kbd,
-pre,
-samp {
+code, kbd, pre, samp {
   font-family: monospace, serif;
   _font-family: 'courier new', monospace;
   font-size: 1em; }
@@ -207,8 +185,7 @@ q {
 /*
  * Addresses `quotes` property not supported in S4.
  */
-q:before,
-q:after {
+q:before, q:after {
   content: '';
   content: none; }
 
@@ -219,8 +196,7 @@ small {
  * Prevents `sub` and `sup` affecting `line-height` in all browsers.
  * gist.github.com/413930
  */
-sub,
-sup {
+sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -238,10 +214,7 @@ sub {
 /*
  * Addresses margins set differently in IE6/7.
  */
-dl,
-menu,
-ol,
-ul {
+dl, menu, ol, ul {
   margin: 1em 0; }
 
 dd {
@@ -250,16 +223,13 @@ dd {
 /*
  * Addresses paddings set differently in IE6/7.
  */
-menu,
-ol,
-ul {
+menu, ol, ul {
   padding: 0 0 0 40px; }
 
 /*
  * Corrects list images handled incorrectly in IE7.
  */
-nav ul,
-nav ol {
+nav ul, nav ol {
   list-style: none;
   list-style-image: none; }
 
@@ -328,10 +298,7 @@ legend {
  * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome.
  * 3. Improves appearance and consistency in all browsers.
  */
-button,
-input,
-select,
-textarea {
+button, input, select, textarea {
   font-size: 100%;
   /* 1 */
   margin: 0;
@@ -345,8 +312,7 @@ textarea {
  * Addresses FF3/4 setting `line-height` on `input` using `!important` in the
  * UA stylesheet.
  */
-button,
-input {
+button, input {
   line-height: normal; }
 
 /*
@@ -358,10 +324,7 @@ input {
  * 4. Removes inner spacing in IE7 without affecting normal text inputs.
  *    Known issue: inner spacing remains in IE6.
  */
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
@@ -372,8 +335,7 @@ input[type="submit"] {
 /*
  * Re-set default cursor for disabled elements.
  */
-button[disabled],
-input[disabled] {
+button[disabled], input[disabled] {
   cursor: default; }
 
 /*
@@ -382,8 +344,7 @@ input[disabled] {
  * 3. Removes excess padding in IE7.
  *    Known issue: excess padding remains in IE6.
  */
-input[type="checkbox"],
-input[type="radio"] {
+input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -409,15 +370,13 @@ input[type="search"] {
 /*
  * Removes inner padding and search cancel button in S5, Chrome on OS X.
  */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 /*
  * Removes inner padding and border in FF3+.
  */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
+button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
@@ -469,9 +428,7 @@ ul, ol {
 dd {
   margin: 0; }
 
-.sidebar ul,
-.sidebar ol,
-.commentlist {
+.sidebar ul, .sidebar ol, .commentlist {
   list-style: none; }
 
 /*********************
@@ -483,9 +440,9 @@ TYPOGRAPHY
 */
 @font-face {
   font-family: 'Mono Social Icons Font';
-  src: url("../fonts/monosocial/MonoSocialIconsFont-1.10.eot");
-  src: url("../fonts/monosocial/MonoSocialIconsFont-1.10.eot?#iefix") format("embedded-opentype"), url("../fonts/monosocial/MonoSocialIconsFont-1.10.woff") format("woff"), url("../fonts/monosocial/MonoSocialIconsFont-1.10.ttf") format("truetype"), url("../fonts/monosocial/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont") format("svg");
-  src: url("../fonts/monosocial/MonoSocialIconsFont-1.10.ttf") format("truetype");
+  src: url('../fonts/monosocial/MonoSocialIconsFont-1.10.eot');
+  src: url('../fonts/monosocial/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'), url('../fonts/monosocial/MonoSocialIconsFont-1.10.woff') format('woff'), url('../fonts/monosocial/MonoSocialIconsFont-1.10.ttf') format('truetype'), url('../fonts/monosocial/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+  src: url('../fonts/monosocial/MonoSocialIconsFont-1.10.ttf') format('truetype');
   font-weight: normal;
   font-style: normal; }
 
@@ -558,7 +515,7 @@ use the best ampersand
 http://simplebits.com/notebook/2008/08/14/ampersands-2/
 */
 span.amp {
-  font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
+  font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif !important;
   font-style: italic; }
 
 .text-left {
@@ -679,10 +636,10 @@ a, a:visited {
     color: #474747; }
   a:link, a:visited:link {
     /*
-    this highlights links on iPhones/iPads.
-    so it basically works like the :hover selector
-    for mobile devices.
-    */
+		this highlights links on iPhones/iPads.
+		so it basically works like the :hover selector
+		for mobile devices.
+		*/
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
 
 /******************************************************************
@@ -693,9 +650,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   text-rendering: optimizelegibility;
   font-weight: 500;
   /*
-  if you're going to use webfonts, be sure to check your weights
-  http://css-tricks.com/watch-your-font-weight/
-  */
+	if you're going to use webfonts, be sure to check your weights
+	http://css-tricks.com/watch-your-font-weight/
+	*/
   /* removing text decoration from all headline links */ }
   h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
     text-decoration: none; }
@@ -751,11 +708,11 @@ NAVIGATION STYLES
     background-color: #eee;
     border-bottom: 1px solid #ccc;
     /*
-    remember this is for mobile ONLY, so there's no need
-    to even declare hover styles here, you can do it in
-    the style.scss file where it's relevant. We want to
-    keep this file as small as possible!
-    */ }
+			remember this is for mobile ONLY, so there's no need
+			to even declare hover styles here, you can do it in
+			the style.scss file where it's relevant. We want to
+			keep this file as small as possible!
+			*/ }
 
 /* end .nav */
 /*********************
@@ -764,7 +721,9 @@ POSTS & CONTENT STYLES
 #content {
   margin-top: 2.2em; }
 
+
 /* end .hentry */
+
 /* style by tag (i.e. tag-news) */
 /* post meta */
 .byline {
@@ -823,14 +782,12 @@ PAGINATION (Thanks to the Ghost team for this)
   text-align: center; }
 
 /* Push the previous/next links out to the left/right */
-.older-posts,
-.newer-posts {
+.older-posts, .newer-posts {
   position: absolute;
   display: inline-block;
   padding: 10px 10px;
   text-decoration: none; }
-  .older-posts:hover,
-  .newer-posts:hover {
+  .older-posts:hover, .newer-posts:hover {
     background-color: #eee; }
 
 .older-posts {
@@ -846,6 +803,8 @@ PAGINATION (Thanks to the Ghost team for this)
 /*********************
 SIDEBARS & ASIDES
 *********************/
+
+
 .widget img {
   max-width: 100%; }
 .widget ul li a {
@@ -859,6 +818,7 @@ FOOTER STYLES
 .footer {
   clear: both; }
 
+
 /*
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
@@ -867,38 +827,42 @@ tweeners.
 */
 @media only screen and (min-width: 481px) {
   /******************************************************************
-  Site Name: 
-  Author: 
-  
-  Stylesheet: 481px and Up Stylesheet
-  
-  This stylesheet is loaded for larger devices. It's set to 
-  481px because at 480px it would load on a landscaped iPhone.
-  This isn't ideal because then you would be loading all those
-  extra styles on that same mobile connection. 
-  
-  A word of warning. This size COULD be a larger mobile device,
-  so you still want to keep it pretty light and simply expand
-  upon your base.scss styles.
-  
-  ******************************************************************/
+Site Name: 
+Author: 
+
+Stylesheet: 481px and Up Stylesheet
+
+This stylesheet is loaded for larger devices. It's set to 
+481px because at 480px it would load on a landscaped iPhone.
+This isn't ideal because then you would be loading all those
+extra styles on that same mobile connection. 
+
+A word of warning. This size COULD be a larger mobile device,
+so you still want to keep it pretty light and simply expand
+upon your base.scss styles.
+
+******************************************************************/
   /*********************
-  NAVIGATION STYLES
-  *********************/
+NAVIGATION STYLES
+*********************/
   /* .menu is clearfixed inside mixins.scss */
+  /* end .menu ul */
+  /*********************
+POSTS & CONTENT STYLES
+*********************/
+  /* entry content */
+  /* end .entry-content */
+  /*********************
+FOOTER STYLES
+*********************/
+  /* end .footer */
   ul {
     /* end .menu ul li */ }
     ul li a {
       /*
-      you can use hover styles here even though this size
-      has the possibility of being a mobile device.
-      */ }
-
-  /* end .menu ul */
-  /*********************
-  POSTS & CONTENT STYLES
-  *********************/
-  /* entry content */
+            you can use hover styles here even though this size
+            has the possibility of being a mobile device.
+            */ }
   .entry-content {
     /* at this larger size, we can start to align images */ }
     .entry-content .alignleft, .entry-content img.alignleft {
@@ -913,13 +877,8 @@ tweeners.
       margin-right: auto;
       margin-left: auto;
       display: block;
-      clear: both; }
+      clear: both; } }
 
-  /* end .entry-content */
-  /*********************
-  FOOTER STYLES
-  *********************/
-  /* end .footer */ }
 /*
 TABLET & SMALLER LAPTOPS
 This is the average viewing window. So Desktops, Laptops, and
@@ -928,118 +887,110 @@ you can add resource intensive styles.
 */
 @media only screen and (min-width: 768px) {
   /******************************************************************
-  Site Name:
-  Author:
-  
-  Stylesheet: Grid Stylesheet
-  
-  I've seperated the grid so you can swap it out easily. It's
-  called at the top the style.scss stylesheet.
-  
-  There are a ton of grid solutions out there. You should definitely
-  experiment with your own. Here are some recommendations:
-  
-  http://gridsetapp.com - Love this site. Responsive Grids made easy.
-  http://susy.oddbird.net/ - Grids using Compass. Very elegant.
-  http://gridpak.com/ - Create your own responsive grid.
-  
-  The grid below is a combination of the 1140 grid and Twitter Boostrap. 
-  I liked 1140 but Boostrap's grid was way more detailed so I merged them 
-  together, let's see how this works out. If you want to use 1140, the original 
-  values are commented out on each line.
-  
-  ******************************************************************/
-  .onecol {
-    width: 5.801104972%; }
+Site Name:
+Author:
 
+Stylesheet: Grid Stylesheet
+
+I've seperated the grid so you can swap it out easily. It's
+called at the top the style.scss stylesheet.
+
+There are a ton of grid solutions out there. You should definitely
+experiment with your own. Here are some recommendations:
+
+http://gridsetapp.com - Love this site. Responsive Grids made easy.
+http://susy.oddbird.net/ - Grids using Compass. Very elegant.
+http://gridpak.com/ - Create your own responsive grid.
+
+The grid below is a combination of the 1140 grid and Twitter Boostrap. 
+I liked 1140 but Boostrap's grid was way more detailed so I merged them 
+together, let's see how this works out. If you want to use 1140, the original 
+values are commented out on each line.
+
+******************************************************************/
   /* 4.85%;  } /* grid_1  */
-  .twocol {
-    width: 14.364640883%; }
-
   /* 13.45%; } /* grid_2  */
-  .threecol {
-    width: 22.928176794%; }
-
   /* 22.05%; } /* grid_3  */
-  .fourcol {
-    width: 31.491712705%; }
-
   /* 30.75%; } /* grid_4  */
-  .fivecol {
-    width: 40.055248616%; }
-
   /* 39.45%; } /* grid_5  */
-  .sixcol {
-    width: 48.618784527%; }
-
   /* 48%;    } /* grid_6  */
-  .sevencol {
-    width: 57.182320438000005%; }
-
   /* 56.75%; } /* grid_7  */
-  .eightcol {
-    width: 65.74585634900001%; }
-
   /* 65.4%;  } /* grid_8  */
-  .ninecol {
-    width: 74.30939226%; }
-
   /* 74.05%; } /* grid_9  */
-  .tencol {
-    width: 82.87292817100001%; }
-
   /* 82.7%;  } /* grid_10 */
-  .elevencol {
-    width: 91.436464082%; }
-
   /* 91.35%; } /* grid_11 */
-  .twelvecol {
-    width: 99.999999993%; }
-
   /* 100%;   } /* grid_12 */
+  /******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+  /*********************
+GENERAL STYLES
+*********************/
+  /*********************
+LAYOUT & GRID STYLES
+*********************/
+  /*********************
+HEADER STYLES
+*********************/
+  /*********************
+NAVIGATION STYLES
+*********************/
+  /* end .nav */
+  /*********************
+SIDEBARS & ASIDES
+*********************/
+  /* end .widget */
+  /*********************
+FOOTER STYLES
+*********************/
+  /* end .footer */
+  .onecol {
+    width: 5.8011%; }
+  .twocol {
+    width: 14.36464%; }
+  .threecol {
+    width: 22.92818%; }
+  .fourcol {
+    width: 31.49171%; }
+  .fivecol {
+    width: 40.05525%; }
+  .sixcol {
+    width: 48.61878%; }
+  .sevencol {
+    width: 57.18232%; }
+  .eightcol {
+    width: 65.74586%; }
+  .ninecol {
+    width: 74.30939%; }
+  .tencol {
+    width: 82.87293%; }
+  .elevencol {
+    width: 91.43646%; }
+  .twelvecol {
+    width: 100%; }
   .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
     position: relative;
     display: block;
     float: left;
-    margin-left: 2.762430939%; }
-
+    margin-left: 2.76243%; }
   .first {
     margin-left: 0; }
-
   .last {
     float: right; }
-
-  /******************************************************************
-  Site Name:
-  Author:
-  
-  Stylesheet: Tablet & Small Desktop Stylesheet
-  
-  Here's where you can start getting into the good stuff.
-  This size will work on iPads, other tablets, and desktops.
-  So you can start working with more styles, background images,
-  and other resources. You'll also notice the grid starts to
-  come into play. Have fun!
-  
-  ******************************************************************/
-  /*********************
-  GENERAL STYLES
-  *********************/
-  /*********************
-  LAYOUT & GRID STYLES
-  *********************/
   .wrap {
     max-width: 1140px; }
-
-  /*********************
-  HEADER STYLES
-  *********************/
   #site-title {
     font-size: 2.5em; }
-
-  /*********************
-  NAVIGATION STYLES
-  *********************/
   #site-navigation {
     background: #eee;
     border: 0;
@@ -1051,37 +1002,25 @@ you can add resource intensive styles.
       #site-navigation li a {
         border-bottom: 0;
         /*
-        you can use hover styles here even though this size
-        has the possibility of being a mobile device.
-        */ }
+			you can use hover styles here even though this size
+			has the possibility of being a mobile device.
+			*/ }
         #site-navigation li a:hover, #site-navigation li a:focus {
           background-color: #dedede; }
       #site-navigation li:hover ul {
         top: auto;
         display: block; }
-
-  /* end .nav */
-  /*********************
-  SIDEBARS & ASIDES
-  *********************/
   .sidebar {
     margin-top: 2.2em; }
-
   .widgettitle {
     border-bottom: 2px solid #444;
     margin-bottom: 0.75em; }
-
   .widget {
     padding: 0 10px;
     margin: 2.2em 0; }
     .widget ul li {
-      margin-bottom: 0.75em; }
+      margin-bottom: 0.75em; } }
 
-  /* end .widget */
-  /*********************
-  FOOTER STYLES
-  *********************/
-  /* end .footer */ }
 /*
 DESKTOP
 This is the average viewing window. So Desktops, Laptops, and
@@ -1090,30 +1029,32 @@ you can add resource intensive styles.
 */
 @media only screen and (min-width: 1030px) {
   /******************************************************************
-  Site Name: 
-  Author: 
-  
-  Stylesheet: Desktop Stylsheet
-  
-  This is the desktop size. It's larger than an iPad so it will only
-  be seen on the Desktop. 
-  
-  ******************************************************************/ }
+Site Name: 
+Author: 
+
+Stylesheet: Desktop Stylsheet
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop. 
+
+******************************************************************/ }
+
 /*
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
 */
 @media only screen and (min-width: 1240px) {
   /******************************************************************
-  Site Name: 
-  Author: 
-  
-  Stylesheet: Super Large Monitor Stylesheet
-  
-  You can add some advanced styles here if you like. This kicks in
-  on larger screens.
-  
-  ******************************************************************/ }
+Site Name: 
+Author: 
+
+Stylesheet: Super Large Monitor Stylesheet
+
+You can add some advanced styles here if you like. This kicks in
+on larger screens.
+
+******************************************************************/ }
+
 /*
 RETINA (2x RESOLUTION DEVICES)
 This applies to the retina iPhone (4s) and iPad (2,3) along with
@@ -1122,47 +1063,50 @@ query for retina AND a certain size if you want. Go Nuts.
 */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /******************************************************************
-  
-  Stylesheet: Retina Screens & Devices Stylesheet
-  
-  When handling retina screens you need to make adjustments, especially
-  if you're not using font icons. Here you can add them in one neat
-  place.
-  
-  ******************************************************************/
+
+Stylesheet: Retina Screens & Devices Stylesheet
+
+When handling retina screens you need to make adjustments, especially
+if you're not using font icons. Here you can add them in one neat
+place.
+
+******************************************************************/
   /* 
-  
-  EXAMPLE 
-  Let's say you have an image and you need to make sure it looks ok
-  on retina screens. Let's say we have an icon which dimension are
-  24px x 24px. In your regular stylesheets, it would look something
-  like this:
-  
-  .icon {
-  	width: 24px;
-  	height: 24px;
-  	background: url(img/test.png) no-repeat;
-  }
-  
-  For retina screens, we have to make some adjustments, so that image
-  doesn't look blurry. So, taking into account the image above and the
-  dimensions, this is what we would put in our retina stylesheet:
-  
-  .icon {
-  	background: url(img/test@2x.png) no-repeat;
-  	background-size: 24px 24px;
-  }
-  
-  So, you would create the same icon, but at double the resolution, meaning 
-  it would be 48px x 48px. You'd name it the same, but with a @2x at the end
-  (this is pretty standard practice). Set the background image so it matches
-  the original dimensions and you are good to go. 
-  
-  */ }
+
+EXAMPLE 
+Let's say you have an image and you need to make sure it looks ok
+on retina screens. Let's say we have an icon which dimension are
+24px x 24px. In your regular stylesheets, it would look something
+like this:
+
+.icon {
+	width: 24px;
+	height: 24px;
+	background: url(img/test.png) no-repeat;
+}
+
+For retina screens, we have to make some adjustments, so that image
+doesn't look blurry. So, taking into account the image above and the
+dimensions, this is what we would put in our retina stylesheet:
+
+.icon {
+	background: url(img/test@2x.png) no-repeat;
+	background-size: 24px 24px;
+}
+
+So, you would create the same icon, but at double the resolution, meaning 
+it would be 48px x 48px. You'd name it the same, but with a @2x at the end
+(this is pretty standard practice). Set the background image so it matches
+the original dimensions and you are good to go. 
+
+*/ }
+
 /*
 iPHONE 5 MEDIA QUERY
 Want to get fancy for no good reason? Knock yourself out.
 */
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) { }
+
 /*
 PRINT STYLESHEET
 Feel free to customize this. Remember to add things that won't make
@@ -1171,23 +1115,25 @@ be set to display none.
 */
 @media print {
   /******************************************************************
-  Site Name:
-  Author:
-  
-  Stylesheet: Print Stylesheet
-  
-  This is the print stylesheet. There's probably not a lot
-  of reasons to edit this stylesheet. If you want to
-  though, go for it.
-  
-  ******************************************************************/
+Site Name:
+Author:
+
+Stylesheet: Print Stylesheet
+
+This is the print stylesheet. There's probably not a lot
+of reasons to edit this stylesheet. If you want to
+though, go for it.
+
+******************************************************************/
+  @page {
+    margin: 0.5cm; }
+
   * {
     background: transparent !important;
     color: black !important;
     text-shadow: none !important;
     filter: none !important;
     -ms-filter: none !important; }
-
   a, a:visited {
     color: #444 !important;
     text-decoration: underline; }
@@ -1195,39 +1141,21 @@ be set to display none.
       content: " (" attr(href) ")"; }
     a abbr[title]:after, a:visited abbr[title]:after {
       content: " (" attr(title) ")"; }
-
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
     content: ""; }
-
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid; }
-
   thead {
     display: table-header-group; }
-
   tr, img {
     page-break-inside: avoid; }
-
   img {
     max-width: 100% !important; }
-
-  @page {
-    margin: 0.5cm; }
-
   p, h2, h3 {
     orphans: 3;
     widows: 3; }
-
-  h2,
-  h3 {
+  h2, h3 {
     page-break-after: avoid; }
-
-  .sidebar,
-  .page-navigation,
-  .wp-prev-next,
-  .respond-form,
-  nav {
+  .sidebar, .page-navigation, .wp-prev-next, .respond-form, nav {
     display: none; } }

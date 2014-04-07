@@ -25,9 +25,9 @@ TYPOGRAPHY
 */
 @font-face {
   font-family: 'Mono Social Icons Font';
-  src: url("../fonts/monosocial/MonoSocialIconsFont-1.10.eot");
-  src: url("../fonts/monosocial/MonoSocialIconsFont-1.10.eot?#iefix") format("embedded-opentype"), url("../fonts/monosocial/MonoSocialIconsFont-1.10.woff") format("woff"), url("../fonts/monosocial/MonoSocialIconsFont-1.10.ttf") format("truetype"), url("../fonts/monosocial/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont") format("svg");
-  src: url("../fonts/monosocial/MonoSocialIconsFont-1.10.ttf") format("truetype");
+  src: url('../fonts/monosocial/MonoSocialIconsFont-1.10.eot');
+  src: url('../fonts/monosocial/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'), url('../fonts/monosocial/MonoSocialIconsFont-1.10.woff') format('woff'), url('../fonts/monosocial/MonoSocialIconsFont-1.10.ttf') format('truetype'), url('../fonts/monosocial/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+  src: url('../fonts/monosocial/MonoSocialIconsFont-1.10.ttf') format('truetype');
   font-weight: normal;
   font-style: normal; }
 
@@ -101,7 +101,7 @@ use the best ampersand
 http://simplebits.com/notebook/2008/08/14/ampersands-2/
 */
 span.amp {
-  font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
+  font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif !important;
   font-style: italic; }
 
 .text-left {
@@ -201,58 +201,58 @@ values are commented out on each line.
 
 ******************************************************************/
 .onecol {
-  width: 5.801104972%; }
+  width: 5.8011%; }
 
 /* 4.85%;  } /* grid_1  */
 .twocol {
-  width: 14.364640883%; }
+  width: 14.36464%; }
 
 /* 13.45%; } /* grid_2  */
 .threecol {
-  width: 22.928176794%; }
+  width: 22.92818%; }
 
 /* 22.05%; } /* grid_3  */
 .fourcol {
-  width: 31.491712705%; }
+  width: 31.49171%; }
 
 /* 30.75%; } /* grid_4  */
 .fivecol {
-  width: 40.055248616%; }
+  width: 40.05525%; }
 
 /* 39.45%; } /* grid_5  */
 .sixcol {
-  width: 48.618784527%; }
+  width: 48.61878%; }
 
 /* 48%;    } /* grid_6  */
 .sevencol {
-  width: 57.182320438000005%; }
+  width: 57.18232%; }
 
 /* 56.75%; } /* grid_7  */
 .eightcol {
-  width: 65.74585634900001%; }
+  width: 65.74586%; }
 
 /* 65.4%;  } /* grid_8  */
 .ninecol {
-  width: 74.30939226%; }
+  width: 74.30939%; }
 
 /* 74.05%; } /* grid_9  */
 .tencol {
-  width: 82.87292817100001%; }
+  width: 82.87293%; }
 
 /* 82.7%;  } /* grid_10 */
 .elevencol {
-  width: 91.436464082%; }
+  width: 91.43646%; }
 
 /* 91.35%; } /* grid_11 */
 .twelvecol {
-  width: 99.999999993%; }
+  width: 100%; }
 
 /* 100%;   } /* grid_12 */
 .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
   position: relative;
   display: block;
   float: left;
-  margin-left: 2.762430939%; }
+  margin-left: 2.76243%; }
 
 .first {
   margin-left: 0; }
@@ -279,14 +279,15 @@ upon your base.scss styles.
 /*********************
 NAVIGATION STYLES
 *********************/
+
 /* .menu is clearfixed inside mixins.scss */
 ul {
   /* end .menu ul li */ }
   ul li a {
     /*
-    you can use hover styles here even though this size
-    has the possibility of being a mobile device.
-    */ }
+            you can use hover styles here even though this size
+            has the possibility of being a mobile device.
+            */ }
 
 /* end .menu ul */
 /*********************
@@ -313,6 +314,7 @@ POSTS & CONTENT STYLES
 /*********************
 FOOTER STYLES
 *********************/
+
 /* end .footer */
 /******************************************************************
 Site Name:
@@ -330,6 +332,7 @@ come into play. Have fun!
 /*********************
 GENERAL STYLES
 *********************/
+
 /*********************
 LAYOUT & GRID STYLES
 *********************/
@@ -339,6 +342,8 @@ LAYOUT & GRID STYLES
 /*********************
 HEADER STYLES
 *********************/
+
+
 #site-title {
   font-size: 2.5em; }
 
@@ -356,9 +361,9 @@ NAVIGATION STYLES
     #site-navigation li a {
       border-bottom: 0;
       /*
-      you can use hover styles here even though this size
-      has the possibility of being a mobile device.
-      */ }
+			you can use hover styles here even though this size
+			has the possibility of being a mobile device.
+			*/ }
       #site-navigation li a:hover, #site-navigation li a:focus {
         background-color: #dedede; }
     #site-navigation li:hover ul {
@@ -386,6 +391,7 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
+
 /* end .footer */
 /******************************************************************
 Site Name: 

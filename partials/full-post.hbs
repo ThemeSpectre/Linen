@@ -23,11 +23,7 @@
 
             {{#if tags}}
                 <span class="amp">&amp;</span>
-                filed under
-                {{#each tags}}
-                    <span class="tag-label">{{this.name}}</span>
-                {{/each}}
-
+                filed under <span class="tags-title">{{tags}}</span>
             {{/if}}
         </p>
 
@@ -41,11 +37,7 @@
         {{#if tags}}
             <p class="tags">
                 <span class="tags-title">
-                    Tags:
-                    {{#each tags}}
-                        {{! Use the span below to display tags as plain text until tag links are ready }}
-                        <span class="tag-label">{{this.name}}</span>
-                    {{/each}}
+                    Tags: {{tags}}
                 </span>
             </p>
         {{/if}}

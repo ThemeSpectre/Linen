@@ -35,7 +35,7 @@ module.exports = function(grunt) {
                     {expand: true, src: ['assets/js/**'], dest: 'build/'},
                     {expand: true, src: ['partials/**'], dest: 'build/'},
                     {expand: true, src: ['scss/**'], dest: 'build/'},
-                    {expand: true, src: ['*', '!.gitignore', '!.DS_Store'], dest: 'build/'},
+                    {expand: true, src: ['*', '!.gitignore', '!.DS_Store'], dest: 'build/'}
                 ]
             },
             archive: {
@@ -69,7 +69,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-compress');
     grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-contrib-sass');
+    //grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('default', ['sass:admin']);
