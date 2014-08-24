@@ -1,6 +1,9 @@
 {
     "name": "linen",
-    "version": "0.3.0",
+    "version": "0.5.0",
+    "author" : "Theme Spectre",
+    "description" : "An open-source starter theme for Ghost.",
+    "homepage" : "http://themespectre.com/linen/",
     "devDependencies": {
     "grunt": "~0.4.1",
         "grunt-contrib-clean": "~0.5.0",
