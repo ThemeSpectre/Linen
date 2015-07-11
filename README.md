@@ -1,5 +1,9 @@
 # Linen - A Starter Theme for Ghost
 
+## Demo
+
+http://linen.themespectre.com/
+
 **Get started making great Ghost themes with Linen!**
 
 This is a *starter theme* for Ghost, and is not intended to be used as-is on any site or blog.
